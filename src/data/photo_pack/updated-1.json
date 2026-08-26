@@ -1,0 +1,2021 @@
+{
+  "Southeast Asia": {
+    "Cambodia": {
+      "Phnom Penh": [
+        {
+          "day": "Day 1",
+          "title": "Royal Palace & National Museum",
+          "image": "https://images.pexels.com/photos/5024573/pexels-photo-5024573.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Killing Fields",
+          "image": "https://images.pexels.com/photos/2758863/pexels-photo-2758863.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Markets & Street Food",
+          "image": "https://images.pexels.com/photos/159924/pexels-photo-159924.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Wat Phnom",
+          "image": "https://images.pexels.com/photos/5592415/pexels-photo-5592415.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Siem Reap": [
+        {
+          "day": "Day 1",
+          "title": "Angkor Wat Sunrise",
+          "image": "https://images.pexels.com/photos/2649167/pexels-photo-2649167.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Ta Prohm",
+          "image": "https://images.pexels.com/photos/5769411/pexels-photo-5769411.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Tonle Sap",
+          "image": "https://images.pexels.com/photos/5951515/pexels-photo-5951515.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Pub Street",
+          "image": "https://images.pexels.com/photos/2416576/pexels-photo-2416576.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Angkor Thom",
+          "image": "https://images.pexels.com/photos/5769456/pexels-photo-5769456.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "Indonesia": {
+      "Bali": [
+        {
+          "day": "Day 1",
+          "title": "Ubud",
+          "image": "https://images.pexels.com/photos/2412711/pexels-photo-2412711.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Tegallalang Rice Terraces",
+          "image": "https://images.pexels.com/photos/2088019/pexels-photo-2088019.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Tanah Lot",
+          "image": "https://images.pexels.com/photos/7612816/pexels-photo-7612816.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Uluwatu",
+          "image": "https://images.pexels.com/photos/6015320/pexels-photo-6015320.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Seminyak Beach",
+          "image": "https://images.pexels.com/photos/36184005/pexels-photo-36184005.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "Thailand": {
+      "Bangkok": [
+        {
+          "day": "Day 1",
+          "title": "Grand Palace",
+          "image": "https://images.pexels.com/photos/236519/pexels-photo-236519.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Chatuchak Market",
+          "image": "https://images.pexels.com/photos/6333174/pexels-photo-6333174.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Chinatown",
+          "image": "https://images.pexels.com/photos/1691341/pexels-photo-1691341.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Floating Market",
+          "image": "https://images.pexels.com/photos/2355088/pexels-photo-2355088.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Ayutthaya",
+          "image": "https://images.pexels.com/photos/327494/pexels-photo-327494.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Chiang Mai": [
+        {
+          "day": "Day 1",
+          "title": "Old City Temples",
+          "image": "https://images.pexels.com/photos/2956618/pexels-photo-2956618.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Doi Suthep",
+          "image": "https://images.pexels.com/photos/7695084/pexels-photo-7695084.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Elephant Sanctuary",
+          "image": "https://images.pexels.com/photos/7395811/pexels-photo-7395811.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Doi Inthanon",
+          "image": "https://images.pexels.com/photos/5376833/pexels-photo-5376833.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Walking Street",
+          "image": "https://images.pexels.com/photos/36701062/pexels-photo-36701062.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Phuket": [
+        {
+          "day": "Day 1",
+          "title": "Old Town",
+          "image": "https://images.pexels.com/photos/7286748/pexels-photo-7286748.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Phang Nga Bay",
+          "image": "https://images.pexels.com/photos/6026860/pexels-photo-6026860.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Phi Phi Islands",
+          "image": "https://images.pexels.com/photos/90427/pexels-photo-90427.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Promthep Sunset",
+          "image": "https://images.pexels.com/photos/3718633/pexels-photo-3718633.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "Vietnam": {
+      "Ha Long Bay": [
+        {
+          "day": "Day 1",
+          "title": "Cruise",
+          "image": "https://images.pexels.com/photos/5334877/pexels-photo-5334877.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Sung Sot Cave",
+          "image": "https://images.pexels.com/photos/13061833/pexels-photo-13061833.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Cat Ba Island",
+          "image": "https://images.pexels.com/photos/6876860/pexels-photo-6876860.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Floating Village",
+          "image": "https://images.pexels.com/photos/5481202/pexels-photo-5481202.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Hanoi": [
+        {
+          "day": "Day 1",
+          "title": "Old Quarter",
+          "image": "https://images.pexels.com/photos/32014789/pexels-photo-32014789.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Ho Chi Minh Complex",
+          "image": "https://images.pexels.com/photos/4999686/pexels-photo-4999686.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Street Food",
+          "image": "https://images.pexels.com/photos/2977435/pexels-photo-2977435.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Train Street",
+          "image": "https://images.pexels.com/photos/36608645/pexels-photo-36608645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Ho Chi Minh City": [
+        {
+          "day": "Day 1",
+          "title": "War Remnants Museum",
+          "image": "https://images.pexels.com/photos/7132576/pexels-photo-7132576.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Cu Chi Tunnels",
+          "image": "https://images.pexels.com/photos/2973305/pexels-photo-2973305.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Ben Thanh Market",
+          "image": "https://images.pexels.com/photos/3683671/pexels-photo-3683671.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Mekong Delta",
+          "image": "https://images.pexels.com/photos/1660996/pexels-photo-1660996.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Chinatown",
+          "image": "https://images.pexels.com/photos/36418057/pexels-photo-36418057.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    }
+  },"Middle East": {
+    "Jordan": {
+      "Dead Sea": [
+        {
+          "day": "Day 1",
+          "title": "Dead Sea Float",
+          "image": "https://images.pexels.com/photos/6477401/pexels-photo-6477401.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Bethany & Hot Springs",
+          "image": "https://images.pexels.com/photos/20333851/pexels-photo-20333851.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Madaba & Mount Nebo",
+          "image": "https://images.pexels.com/photos/5522722/pexels-photo-5522722.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Wadi Mujib",
+          "image": "https://images.pexels.com/photos/5559878/pexels-photo-5559878.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Petra": [
+        {
+          "day": "Day 1",
+          "title": "Siq & Treasury",
+          "image": "https://images.pexels.com/photos/36283918/pexels-photo-36283918.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Monastery",
+          "image": "https://images.pexels.com/photos/720254/pexels-photo-720254.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Royal Tombs",
+          "image": "https://images.pexels.com/photos/36283918/pexels-photo-36283918.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Petra by Night",
+          "image": "https://images.pexels.com/photos/3214958/pexels-photo-3214958.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Little Petra",
+          "image": "https://images.pexels.com/photos/36283918/pexels-photo-36283918.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "Oman": {
+      "Muscat": [
+        {
+          "day": "Day 1",
+          "title": "Sultan Qaboos Mosque",
+          "image": "https://images.pexels.com/photos/36549111/pexels-photo-36549111.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Bandar Khayran",
+          "image": "https://images.pexels.com/photos/36195013/pexels-photo-36195013.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Wadi Shab",
+          "image": "https://images.pexels.com/photos/5559878/pexels-photo-5559878.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Nizwa Fort",
+          "image": "https://images.pexels.com/photos/36245709/pexels-photo-36245709.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Royal Opera House",
+          "image": "https://images.pexels.com/photos/36584501/pexels-photo-36584501.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "Turkey": {
+      "Cappadocia": [
+        {
+          "day": "Day 1",
+          "title": "Fairy Chimneys",
+          "image": "https://images.pexels.com/photos/7445847/pexels-photo-7445847.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Hot Air Balloons",
+          "image": "https://images.pexels.com/photos/4973584/pexels-photo-4973584.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Underground City",
+          "image": "https://images.pexels.com/photos/6599165/pexels-photo-6599165.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Uchisar Castle",
+          "image": "https://images.pexels.com/photos/4727123/pexels-photo-4727123.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Love Valley",
+          "image": "https://images.pexels.com/photos/6243251/pexels-photo-6243251.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Istanbul": [
+        {
+          "day": "Day 1",
+          "title": "Hagia Sophia & Blue Mosque",
+          "image": "https://images.pexels.com/photos/7539810/pexels-photo-7539810.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Topkapi Palace",
+          "image": "https://images.pexels.com/photos/36229688/pexels-photo-36229688.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Bosphorus",
+          "image": "https://images.pexels.com/photos/36194906/pexels-photo-36194906.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Cappadocia Balloons",
+          "image": "https://images.pexels.com/photos/4973584/pexels-photo-4973584.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "UAE": {
+      "Dubai": [
+        {
+          "day": "Day 1",
+          "title": "Burj Khalifa",
+          "image": "https://images.pexels.com/photos/3848412/pexels-photo-3848412.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Dubai Creek",
+          "image": "https://images.pexels.com/photos/1372016/pexels-photo-1372016.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Desert Safari",
+          "image": "https://images.pexels.com/photos/4229641/pexels-photo-4229641.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Dubai Marina",
+          "image": "https://images.pexels.com/photos/818775/pexels-photo-818775.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "United Arab Emirates": {
+      "Abu Dhabi": [
+        {
+          "day": "Day 1",
+          "title": "Sheikh Zayed Mosque",
+          "image": "https://images.pexels.com/photos/415648/pexels-photo-415648.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Mangroves",
+          "image": "https://images.pexels.com/photos/7252278/pexels-photo-7252278.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Desert Dunes",
+          "image": "https://images.pexels.com/photos/2867771/pexels-photo-2867771.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Al Ain Oasis",
+          "image": "https://images.pexels.com/photos/1117481/pexels-photo-1117481.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Yas Island",
+          "image": "https://images.pexels.com/photos/36329344/pexels-photo-36329344.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    }
+  }, "North America": {
+    "Canada": {
+      "Banff": [
+        {
+          "day": "Day 1",
+          "title": "Banff Townsite & Bow Valley Exploration",
+          "image": "https://images.pexels.com/photos/36185626/pexels-photo-36185626.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Lake Louise & Moraine Lake",
+          "image": "https://images.pexels.com/photos/2916817/pexels-photo-2916817.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Icefields Parkway & Athabasca Glacier",
+          "image": "https://images.pexels.com/photos/5635734/pexels-photo-5635734.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Sulphur Mountain Gondola & Johnston Canyon",
+          "image": "https://images.pexels.com/photos/36287405/pexels-photo-36287405.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Banff Wildlife Safari & Farewell Hike",
+          "image": "https://images.pexels.com/photos/36282616/pexels-photo-36282616.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Vancouver": [
+        {
+          "day": "Day 1",
+          "title": "Stanley Park & Gastown Exploration",
+          "image": "https://images.pexels.com/photos/6644046/pexels-photo-6644046.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Granville Island & Kitsilano Beach",
+          "image": "https://images.pexels.com/photos/2782485/pexels-photo-2782485.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "North Shore Mountains & Capilano Suspension Bridge",
+          "image": "https://images.pexels.com/photos/6272214/pexels-photo-6272214.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Whistler & Sea-to-Sky Highway",
+          "image": "https://images.pexels.com/photos/5727513/pexels-photo-5727513.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Richmond Night Market",
+          "image": "https://images.pexels.com/photos/5745903/pexels-photo-5745903.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "Mexico": {
+      "Cancun": [
+        {
+          "day": "Day 1",
+          "title": "Isla Mujeres",
+          "image": "https://images.pexels.com/photos/3214955/pexels-photo-3214955.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Cenotes",
+          "image": "https://images.pexels.com/photos/3822133/pexels-photo-3822133.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Tulum Ruins",
+          "image": "https://images.pexels.com/photos/6015674/pexels-photo-6015674.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Xcaret Park",
+          "image": "https://images.pexels.com/photos/28222326/pexels-photo-28222326.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Chichen Itza": [
+        {
+          "day": "Day 1",
+          "title": "Chichen Itza Dawn",
+          "image": "https://images.pexels.com/photos/6092060/pexels-photo-6092060.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Cenote Ik Kil",
+          "image": "https://images.pexels.com/photos/6033966/pexels-photo-6033966.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Ek Balam",
+          "image": "https://images.pexels.com/photos/17148886/pexels-photo-17148886.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Merida",
+          "image": "https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Mexico City": [
+        {
+          "day": "Day 1",
+          "title": "Zocalo",
+          "image": "https://images.pexels.com/photos/7589731/pexels-photo-7589731.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Chapultepec",
+          "image": "https://images.pexels.com/photos/36658697/pexels-photo-36658697.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Xochimilco",
+          "image": "https://images.pexels.com/photos/1682688/pexels-photo-1682688.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Roma Norte",
+          "image": "https://images.pexels.com/photos/4607505/pexels-photo-4607505.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Teotihuacan",
+          "image": "https://images.pexels.com/photos/4700267/pexels-photo-4700267.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Tulum": [
+        {
+          "day": "Day 1",
+          "title": "Tulum Beach",
+          "image": "https://images.pexels.com/photos/3822155/pexels-photo-3822155.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Gran Cenote",
+          "image": "https://images.pexels.com/photos/3822133/pexels-photo-3822133.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Sian Kaan",
+          "image": "https://images.pexels.com/photos/3700256/pexels-photo-3700256.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Temazcal",
+          "image": "https://images.pexels.com/photos/7264432/pexels-photo-7264432.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "USA": {
+      "Grand Canyon": [
+        {
+          "day": "Day 1",
+          "title": "South Rim",
+          "image": "https://images.pexels.com/photos/7362597/pexels-photo-7362597.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Bright Angel Trail",
+          "image": "https://images.pexels.com/photos/36582284/pexels-photo-36582284.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Desert View",
+          "image": "https://images.pexels.com/photos/7667382/pexels-photo-7667382.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Havasu Falls",
+          "image": "https://images.pexels.com/photos/18353689/pexels-photo-18353689.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Colorado River",
+          "image": "https://images.pexels.com/photos/6642556/pexels-photo-6642556.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Hawaii": [
+        {
+          "day": "Day 1",
+          "title": "Waikiki",
+          "image": "https://images.pexels.com/photos/5007422/pexels-photo-5007422.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "North Shore",
+          "image": "https://images.pexels.com/photos/4601159/pexels-photo-4601159.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Haleakala",
+          "image": "https://images.pexels.com/photos/1022752/pexels-photo-1022752.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Volcanoes Park",
+          "image": "https://images.pexels.com/photos/68645/hawaii-volcano-hot-fire-68645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Na Pali Coast",
+          "image": "https://images.pexels.com/photos/5269890/pexels-photo-5269890.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "New York City": [
+        {
+          "day": "Day 1",
+          "title": "Times Square",
+          "image": "https://images.pexels.com/photos/1089194/pexels-photo-1089194.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Central Park",
+          "image": "https://images.pexels.com/photos/5491674/pexels-photo-5491674.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Statue of Liberty",
+          "image": "https://images.pexels.com/photos/64271/queen-of-liberty-statue-of-liberty-new-york-liberty-statue-64271.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Brooklyn Bridge",
+          "image": "https://images.pexels.com/photos/7528549/pexels-photo-7528549.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "High Line",
+          "image": "https://images.pexels.com/photos/6084424/pexels-photo-6084424.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Sedona": [
+        {
+          "day": "Day 1",
+          "title": "Cathedral Rock",
+          "image": "https://images.pexels.com/photos/6058890/pexels-photo-6058890.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Vortex",
+          "image": "https://images.pexels.com/photos/3876200/pexels-photo-3876200.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "West Fork",
+          "image": "https://images.pexels.com/photos/6856596/pexels-photo-6856596.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Jeep Tour",
+          "image": "https://images.pexels.com/photos/822355/pexels-photo-822355.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Yellowstone": [
+        {
+          "day": "Day 1",
+          "title": "Old Faithful",
+          "image": "https://images.pexels.com/photos/5032690/pexels-photo-5032690.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Grand Prismatic",
+          "image": "https://images.pexels.com/photos/4172528/pexels-photo-4172528.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Lamar Valley",
+          "image": "https://images.pexels.com/photos/7740534/pexels-photo-7740534.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Yellowstone Canyon",
+          "image": "https://images.pexels.com/photos/7226885/pexels-photo-7226885.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Mammoth Springs",
+          "image": "https://images.pexels.com/photos/4813812/pexels-photo-4813812.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    }
+  },
+  "East Asia": {
+    "China": {
+      "Great Wall": [
+        {
+          "day": "Day 1",
+          "title": "Beijing Hutong",
+          "image": "https://images.pexels.com/photos/4567288/pexels-photo-4567288.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Mutianyu Great Wall",
+          "image": "https://images.pexels.com/photos/4445240/pexels-photo-4445240.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Jinshanling Section",
+          "image": "https://images.pexels.com/photos/2304791/pexels-photo-2304791.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Forbidden City",
+          "image": "https://images.pexels.com/photos/6820064/pexels-photo-6820064.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Summer Palace",
+          "image": "https://images.pexels.com/photos/2846075/pexels-photo-2846075.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Guilin": [
+        {
+          "day": "Day 1",
+          "title": "Elephant Trunk Hill",
+          "image": "https://images.pexels.com/photos/131398/pexels-photo-131398.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Li River",
+          "image": "https://images.pexels.com/photos/36398300/pexels-photo-36398300.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Yangshuo",
+          "image": "https://images.pexels.com/photos/36398292/pexels-photo-36398292.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Longji Rice Terraces",
+          "image": "https://images.pexels.com/photos/2362085/pexels-photo-2362085.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Reed Flute Cave",
+          "image": "https://images.pexels.com/photos/6343452/pexels-photo-6343452.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Shanghai": [
+        {
+          "day": "Day 1",
+          "title": "The Bund",
+          "image": "https://images.pexels.com/photos/4456054/pexels-photo-4456054.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "French Concession",
+          "image": "https://images.pexels.com/photos/36064470/pexels-photo-36064470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Yu Garden",
+          "image": "https://images.pexels.com/photos/36487215/pexels-photo-36487215.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Shanghai Skyline",
+          "image": "https://images.pexels.com/photos/6902201/pexels-photo-6902201.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Tibet": [
+        {
+          "day": "Day 1",
+          "title": "Lhasa",
+          "image": "https://images.pexels.com/photos/2149749/pexels-photo-2149749.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Potala Palace",
+          "image": "https://images.pexels.com/photos/4088095/pexels-photo-4088095.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Sera Monastery",
+          "image": "https://images.pexels.com/photos/35997831/pexels-photo-35997831.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Yamdrok Lake",
+          "image": "https://images.pexels.com/photos/6666087/pexels-photo-6666087.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Everest Base Camp",
+          "image": "https://images.pexels.com/photos/3747567/pexels-photo-3747567.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Xian": [
+        {
+          "day": "Day 1",
+          "title": "City Wall",
+          "image": "https://images.pexels.com/photos/1749721/pexels-photo-1749721.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Terracotta Army",
+          "image": "https://images.pexels.com/photos/5342720/pexels-photo-5342720.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Wild Goose Pagoda",
+          "image": "https://images.pexels.com/photos/1731534/pexels-photo-1731534.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Mount Huashan",
+          "image": "https://images.pexels.com/photos/36702206/pexels-photo-36702206.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "Japan": {
+      "Kyoto": [
+        {
+          "day": "Day 1",
+          "title": "Fushimi Inari",
+          "image": "https://images.pexels.com/photos/3995905/pexels-photo-3995905.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Arashiyama Bamboo",
+          "image": "https://images.pexels.com/photos/36352205/pexels-photo-36352205.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Gion District",
+          "image": "https://images.pexels.com/photos/36352182/pexels-photo-36352182.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Philosopher Path",
+          "image": "https://images.pexels.com/photos/28157162/pexels-photo-28157162.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Uji Tea Town",
+          "image": "https://images.pexels.com/photos/6226209/pexels-photo-6226209.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Mount Fuji": [
+        {
+          "day": "Day 1",
+          "title": "Lake Kawaguchi",
+          "image": "https://images.pexels.com/photos/5819320/pexels-photo-5819320.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Fuji Climb",
+          "image": "https://images.pexels.com/photos/36476004/pexels-photo-36476004.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Fuji Sunrise",
+          "image": "https://images.pexels.com/photos/2451036/pexels-photo-2451036.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Hakone",
+          "image": "https://images.pexels.com/photos/4009214/pexels-photo-4009214.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Osaka": [
+        {
+          "day": "Day 1",
+          "title": "Dotonbori",
+          "image": "https://images.pexels.com/photos/4456247/pexels-photo-4456247.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Osaka Castle",
+          "image": "https://images.pexels.com/photos/5288650/pexels-photo-5288650.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Nara",
+          "image": "https://images.pexels.com/photos/6249413/pexels-photo-6249413.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Osaka Nightlife",
+          "image": "https://images.pexels.com/photos/4456237/pexels-photo-4456237.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Tokyo": [
+        {
+          "day": "Day 1",
+          "title": "Shibuya Crossing",
+          "image": "https://images.pexels.com/photos/34142/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Asakusa Temple",
+          "image": "https://images.pexels.com/photos/5362196/pexels-photo-5362196.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Tsukiji Market",
+          "image": "https://images.pexels.com/photos/2982653/pexels-photo-2982653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Mount Fuji Trip",
+          "image": "https://images.pexels.com/photos/36476004/pexels-photo-36476004.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Akihabara",
+          "image": "https://images.pexels.com/photos/5905578/pexels-photo-5905578.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },"Mongolia": {
+      "Gobi Desert": [
+        {
+          "day": "Day 1",
+          "title": "Flaming Cliffs",
+          "image": "https://images.pexels.com/photos/4328071/pexels-photo-4328071.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Camel Trek",
+          "image": "https://images.pexels.com/photos/5110947/pexels-photo-5110947.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Khongoryn Els Dunes",
+          "image": "https://images.pexels.com/photos/4326480/pexels-photo-4326480.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Yol Valley",
+          "image": "https://images.pexels.com/photos/36121994/pexels-photo-36121994.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Ongi Monastery",
+          "image": "https://images.pexels.com/photos/6650457/pexels-photo-6650457.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Khovsgol Lake": [
+        {
+          "day": "Day 1",
+          "title": "Lake Camp",
+          "image": "https://images.pexels.com/photos/36103492/pexels-photo-36103492.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Horseback Ride",
+          "image": "https://images.pexels.com/photos/4326848/pexels-photo-4326848.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Reindeer Herders",
+          "image": "https://images.pexels.com/photos/3846452/pexels-photo-3846452.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Kayaking",
+          "image": "https://images.pexels.com/photos/36236713/pexels-photo-36236713.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Forest Trek",
+          "image": "https://images.pexels.com/photos/5656634/pexels-photo-5656634.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Ulaanbaatar": [
+        {
+          "day": "Day 1",
+          "title": "Genghis Khan Square",
+          "image": "https://images.pexels.com/photos/6467105/pexels-photo-6467105.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Monastery",
+          "image": "https://images.pexels.com/photos/4326008/pexels-photo-4326008.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Naadam Festival",
+          "image": "https://images.pexels.com/photos/3093084/pexels-photo-3093084.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Terelj Park",
+          "image": "https://images.pexels.com/photos/6466766/pexels-photo-6466766.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Market",
+          "image": "https://images.pexels.com/photos/4321588/pexels-photo-4321588.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "South Korea": {
+      "Busan": [
+        {
+          "day": "Day 1",
+          "title": "Jagalchi Market",
+          "image": "https://images.pexels.com/photos/5051604/pexels-photo-5051604.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Gamcheon Village",
+          "image": "https://images.pexels.com/photos/36612265/pexels-photo-36612265.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Haeundae Beach",
+          "image": "https://images.pexels.com/photos/5863417/pexels-photo-5863417.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Beomeosa Temple",
+          "image": "https://images.pexels.com/photos/3643406/pexels-photo-3643406.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Jeju Island": [
+        {
+          "day": "Day 1",
+          "title": "Jeju City",
+          "image": "https://images.pexels.com/photos/6306926/pexels-photo-6306926.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Hallasan",
+          "image": "https://images.pexels.com/photos/31949661/pexels-photo-31949661.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Manjanggul Cave",
+          "image": "https://images.pexels.com/photos/36165606/pexels-photo-36165606.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Olle Trail",
+          "image": "https://images.pexels.com/photos/6306926/pexels-photo-6306926.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Tangerine Farm",
+          "image": "https://images.pexels.com/photos/36236635/pexels-photo-36236635.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Seoul": [
+        {
+          "day": "Day 1",
+          "title": "Gyeongbokgung",
+          "image": "https://images.pexels.com/photos/380707/pexels-photo-380707.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "DMZ",
+          "image": "https://images.pexels.com/photos/36022528/pexels-photo-36022528.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Hongdae",
+          "image": "https://images.pexels.com/photos/11869782/pexels-photo-11869782.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Gangnam",
+          "image": "https://images.pexels.com/photos/2128042/pexels-photo-2128042.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Namsan Tower",
+          "image": "https://images.pexels.com/photos/1637776/pexels-photo-1637776.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    }
+
+  },"Africa": {
+    "Egypt": {
+      "Luxor": [
+        {
+          "day": "Day 1",
+          "title": "Karnak & Luxor Temple",
+          "image": "https://images.pexels.com/photos/36518565/pexels-photo-36518565.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Valley of the Kings",
+          "image": "https://images.pexels.com/photos/5572512/pexels-photo-5572512.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Hot Air Balloon",
+          "image": "https://images.pexels.com/photos/35870087/pexels-photo-35870087.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Felucca Nile",
+          "image": "https://images.pexels.com/photos/5727263/pexels-photo-5727263.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Mount Sinai": [
+        {
+          "day": "Day 1",
+          "title": "St Catherine Village",
+          "image": "https://images.pexels.com/photos/35997094/pexels-photo-35997094.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Summit Sunrise",
+          "image": "https://images.pexels.com/photos/35966438/pexels-photo-35966438.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Monastery",
+          "image": "https://images.pexels.com/photos/35966498/pexels-photo-35966498.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Wadi Trails",
+          "image": "https://images.pexels.com/photos/35966438/pexels-photo-35966438.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Pyramids of Giza": [
+        {
+          "day": "Day 1",
+          "title": "Pyramids & Sphinx",
+          "image": "https://images.pexels.com/photos/36505454/pexels-photo-36505454.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Egyptian Museum",
+          "image": "https://images.pexels.com/photos/4353815/pexels-photo-4353815.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Saqqara",
+          "image": "https://images.pexels.com/photos/3670703/pexels-photo-3670703.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Nile Cruise",
+          "image": "https://images.pexels.com/photos/36047721/pexels-photo-36047721.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "Kenya": {
+      "Masai Mara": [
+        {
+          "day": "Day 1",
+          "title": "Game Drive",
+          "image": "https://images.pexels.com/photos/226368/pexels-photo-226368.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Migration",
+          "image": "https://images.pexels.com/photos/12748795/pexels-photo-12748795.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Maasai Village",
+          "image": "https://images.pexels.com/photos/6299632/pexels-photo-6299632.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Balloon Safari",
+          "image": "https://images.pexels.com/photos/7780132/pexels-photo-7780132.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "Morocco": {
+      "Fes": [
+        {
+          "day": "Day 1",
+          "title": "Fes Medina",
+          "image": "https://images.pexels.com/photos/5518970/pexels-photo-5518970.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Al Quaraouiyine",
+          "image": "https://images.pexels.com/photos/951832/pexels-photo-951832.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Jewish Quarter",
+          "image": "https://images.pexels.com/photos/5518970/pexels-photo-5518970.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Merenid Tombs",
+          "image": "https://images.pexels.com/photos/5505076/pexels-photo-5505076.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Volubilis",
+          "image": "https://images.pexels.com/photos/5503391/pexels-photo-5503391.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Marrakech": [
+        {
+          "day": "Day 1",
+          "title": "Medina",
+          "image": "https://images.pexels.com/photos/36209321/pexels-photo-36209321.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Bahia Palace",
+          "image": "https://images.pexels.com/photos/36599126/pexels-photo-36599126.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Atlas Mountains",
+          "image": "https://images.pexels.com/photos/972990/pexels-photo-972990.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Agafay Desert",
+          "image": "https://images.pexels.com/photos/35910043/pexels-photo-35910043.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Souk",
+          "image": "https://images.pexels.com/photos/36209446/pexels-photo-36209446.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "South Africa": {
+      "Cape Town": [
+        {
+          "day": "Day 1",
+          "title": "Table Mountain",
+          "image": "https://images.pexels.com/photos/36026470/pexels-photo-36026470.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Cape Peninsula",
+          "image": "https://images.pexels.com/photos/2407103/pexels-photo-2407103.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Robben Island",
+          "image": "https://images.pexels.com/photos/136721/pexels-photo-136721.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Stellenbosch",
+          "image": "https://images.pexels.com/photos/5494693/pexels-photo-5494693.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Kalk Bay",
+          "image": "https://images.pexels.com/photos/3886665/pexels-photo-3886665.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "Tanzania": {
+      "Serengeti": [
+        {
+          "day": "Day 1",
+          "title": "Game Drive",
+          "image": "https://images.pexels.com/photos/36372121/pexels-photo-36372121.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Big Cats",
+          "image": "https://images.pexels.com/photos/7205267/pexels-photo-7205267.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "River Crossing",
+          "image": "https://images.pexels.com/photos/5369453/pexels-photo-5369453.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Balloon Safari",
+          "image": "https://images.pexels.com/photos/7780132/pexels-photo-7780132.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Plains",
+          "image": "https://images.pexels.com/photos/35981578/pexels-photo-35981578.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Zanzibar": [
+        {
+          "day": "Day 1",
+          "title": "Stone Town",
+          "image": "https://images.pexels.com/photos/7101641/pexels-photo-7101641.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Spice Tour",
+          "image": "https://images.pexels.com/photos/5769698/pexels-photo-5769698.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Nungwi Beach",
+          "image": "https://images.pexels.com/photos/5859000/pexels-photo-5859000.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Prison Island",
+          "image": "https://images.pexels.com/photos/36468476/pexels-photo-36468476.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Paje Beach",
+          "image": "https://images.pexels.com/photos/36468231/pexels-photo-36468231.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    }
+  },
+  "Europe": {
+    "France": {
+      "Paris": [
+        {
+          "day": "Day 1",
+          "title": "Eiffel Tower & Seine",
+          "image": "https://images.pexels.com/photos/6059888/pexels-photo-6059888.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Louvre & Tuileries",
+          "image": "https://images.pexels.com/photos/36040350/pexels-photo-36040350.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Montmartre & Sacre Coeur",
+          "image": "https://images.pexels.com/photos/5005317/pexels-photo-5005317.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Versailles Palace",
+          "image": "https://images.pexels.com/photos/5972294/pexels-photo-5972294.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "Greece": {
+      "Santorini": [
+        {
+          "day": "Day 1",
+          "title": "Oia Blue Domes",
+          "image": "https://images.pexels.com/photos/6604243/pexels-photo-6604243.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Caldera & Volcano",
+          "image": "https://images.pexels.com/photos/161342/greece-santorini-architecture-island-161342.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Akrotiri & Red Beach",
+          "image": "https://images.pexels.com/photos/2912449/pexels-photo-2912449.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "Italy": {
+      "Amalfi Coast": [
+        {
+          "day": "Day 1",
+          "title": "Positano",
+          "image": "https://images.pexels.com/photos/36426022/pexels-photo-36426022.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Path of the Gods",
+          "image": "https://images.pexels.com/photos/358223/pexels-photo-358223.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Amalfi & Ravello",
+          "image": "https://images.pexels.com/photos/4147762/pexels-photo-4147762.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Emerald Grotto",
+          "image": "https://images.pexels.com/photos/5043638/pexels-photo-5043638.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Rome": [
+        {
+          "day": "Day 1",
+          "title": "Colosseum & Forum",
+          "image": "https://images.pexels.com/photos/36581134/pexels-photo-36581134.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Vatican City",
+          "image": "https://images.pexels.com/photos/36581252/pexels-photo-36581252.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Pantheon & Trastevere",
+          "image": "https://images.pexels.com/photos/36396955/pexels-photo-36396955.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Spanish Steps",
+          "image": "https://images.pexels.com/photos/36595933/pexels-photo-36595933.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "Russia": {
+      "Lake Baikal": [
+        {
+          "day": "Day 1",
+          "title": "Irkutsk",
+          "image": "https://images.pexels.com/photos/7127420/pexels-photo-7127420.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Olkhon Island",
+          "image": "https://images.pexels.com/photos/7039181/pexels-photo-7039181.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Baikal Trail",
+          "image": "https://images.pexels.com/photos/7119508/pexels-photo-7119508.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Hot Springs",
+          "image": "https://images.pexels.com/photos/7039765/pexels-photo-7039765.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Listvianka",
+          "image": "https://images.pexels.com/photos/5643618/pexels-photo-5643618.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Moscow": [
+        {
+          "day": "Day 1",
+          "title": "Red Square",
+          "image": "https://images.pexels.com/photos/7015780/pexels-photo-7015780.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Bolshoi Theatre",
+          "image": "https://images.pexels.com/photos/7316643/pexels-photo-7316643.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Tretyakov Gallery",
+          "image": "https://images.pexels.com/photos/11922103/pexels-photo-11922103.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Arbat Street",
+          "image": "https://images.pexels.com/photos/10311704/pexels-photo-10311704.png?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Kolomenskoye",
+          "image": "https://images.pexels.com/photos/36388161/pexels-photo-36388161.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "St Petersburg": [
+        {
+          "day": "Day 1",
+          "title": "Hermitage Museum",
+          "image": "https://images.pexels.com/photos/6865593/pexels-photo-6865593.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Peter and Paul Fortress",
+          "image": "https://images.pexels.com/photos/5058638/pexels-photo-5058638.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Peterhof Palace",
+          "image": "https://images.pexels.com/photos/5512840/pexels-photo-5512840.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Mariinsky Theatre",
+          "image": "https://images.pexels.com/photos/7329481/pexels-photo-7329481.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Catherine Palace",
+          "image": "https://images.pexels.com/photos/4555622/pexels-photo-4555622.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "Spain": {
+      "Barcelona": [
+        {
+          "day": "Day 1",
+          "title": "Gaudi Architecture",
+          "image": "https://images.pexels.com/photos/6480298/pexels-photo-6480298.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Gothic Quarter",
+          "image": "https://images.pexels.com/photos/4544955/pexels-photo-4544955.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Picasso Museum",
+          "image": "https://images.pexels.com/photos/5472431/pexels-photo-5472431.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Montjuic",
+          "image": "https://images.pexels.com/photos/36043035/pexels-photo-36043035.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Madrid": [
+        {
+          "day": "Day 1",
+          "title": "Royal Palace",
+          "image": "https://images.pexels.com/photos/6139145/pexels-photo-6139145.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Reina Sofia",
+          "image": "https://images.pexels.com/photos/19693243/pexels-photo-19693243.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "La Latina",
+          "image": "https://images.pexels.com/photos/5267663/pexels-photo-5267663.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Gran Via",
+          "image": "https://images.pexels.com/photos/919282/pexels-photo-919282.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "Switzerland": {
+      "Swiss Alps": [
+        {
+          "day": "Day 1",
+          "title": "Interlaken",
+          "image": "https://images.pexels.com/photos/418842/pexels-photo-418842.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Jungfraujoch",
+          "image": "https://images.pexels.com/photos/5210421/pexels-photo-5210421.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Lauterbrunnen",
+          "image": "https://images.pexels.com/photos/5210144/pexels-photo-5210144.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Grindelwald",
+          "image": "https://images.pexels.com/photos/4762984/pexels-photo-4762984.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Glacier Express",
+          "image": "https://images.pexels.com/photos/5641349/pexels-photo-5641349.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    }
+  },"South America": {
+    "Argentina": {
+      "Buenos Aires": [
+        {
+          "day": "Day 1",
+          "title": "La Boca & San Telmo",
+          "image": "https://images.pexels.com/photos/1392732/pexels-photo-1392732.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Recoleta & Casa Rosada",
+          "image": "https://images.pexels.com/photos/5609528/pexels-photo-5609528.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Palermo & Food Culture",
+          "image": "https://images.pexels.com/photos/35895230/pexels-photo-35895230.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Puerto Madero & Tigre Delta",
+          "image": "https://images.pexels.com/photos/35994507/pexels-photo-35994507.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Tango Show",
+          "image": "https://images.pexels.com/photos/1709920/pexels-photo-1709920.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Patagonia": [
+        {
+          "day": "Day 1",
+          "title": "Perito Moreno Glacier",
+          "image": "https://images.pexels.com/photos/4346709/pexels-photo-4346709.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Upsala Glacier",
+          "image": "https://images.pexels.com/photos/7116638/pexels-photo-7116638.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Fitz Roy Trek",
+          "image": "https://images.pexels.com/photos/7476116/pexels-photo-7476116.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Ushuaia",
+          "image": "https://images.pexels.com/photos/6721004/pexels-photo-6721004.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Torres del Paine",
+          "image": "https://images.pexels.com/photos/4599300/pexels-photo-4599300.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "Brazil": {
+      "Amazon Rainforest": [
+        {
+          "day": "Day 1",
+          "title": "Manaus & Waters",
+          "image": "https://images.pexels.com/photos/36628988/pexels-photo-36628988.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Canopy Walk",
+          "image": "https://images.pexels.com/photos/36252725/pexels-photo-36252725.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Canoeing",
+          "image": "https://images.pexels.com/photos/6034712/pexels-photo-6034712.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Night Safari",
+          "image": "https://images.pexels.com/photos/1457600/pexels-photo-1457600.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Rio de Janeiro": [
+        {
+          "day": "Day 1",
+          "title": "Christ the Redeemer",
+          "image": "https://images.pexels.com/photos/3648370/pexels-photo-3648370.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Sugarloaf & Copacabana",
+          "image": "https://images.pexels.com/photos/6813355/pexels-photo-6813355.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Ipanema & Gardens",
+          "image": "https://images.pexels.com/photos/70759/ipanema-beach-rio-de-janeiro-sugarload-mountain-brazil-70759.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Lapa Arches",
+          "image": "https://images.pexels.com/photos/4494028/pexels-photo-4494028.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Tijuca Forest",
+          "image": "https://images.pexels.com/photos/6813355/pexels-photo-6813355.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Salvador": [
+        {
+          "day": "Day 1",
+          "title": "Pelourinho",
+          "image": "https://images.pexels.com/photos/3807912/pexels-photo-3807912.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Lacerda Elevator",
+          "image": "https://images.pexels.com/photos/2115383/pexels-photo-2115383.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Candomble",
+          "image": "https://images.pexels.com/photos/3747567/pexels-photo-3747567.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Capoeira",
+          "image": "https://images.pexels.com/photos/4238873/pexels-photo-4238873.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "Peru": {
+      "Cusco": [
+        {
+          "day": "Day 1",
+          "title": "Plaza de Armas",
+          "image": "https://images.pexels.com/photos/5198285/pexels-photo-5198285.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "San Pedro Market",
+          "image": "https://images.pexels.com/photos/6773965/pexels-photo-6773965.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Sacsayhuaman",
+          "image": "https://images.pexels.com/photos/7143997/pexels-photo-7143997.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Rainbow Mountain",
+          "image": "https://images.pexels.com/photos/7343376/pexels-photo-7343376.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Machu Picchu",
+          "image": "https://images.pexels.com/photos/36459302/pexels-photo-36459302.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Machu Picchu": [
+        {
+          "day": "Day 1",
+          "title": "Cusco Arrival",
+          "image": "https://images.pexels.com/photos/36676188/pexels-photo-36676188.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Sacred Valley",
+          "image": "https://images.pexels.com/photos/5082930/pexels-photo-5082930.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Inca Trail",
+          "image": "https://images.pexels.com/photos/6780760/pexels-photo-6780760.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Machu Picchu",
+          "image": "https://images.pexels.com/photos/36459302/pexels-photo-36459302.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Aguas Calientes",
+          "image": "https://images.pexels.com/photos/4835354/pexels-photo-4835354.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Sacred Valley": [
+        {
+          "day": "Day 1",
+          "title": "Pisac",
+          "image": "https://images.pexels.com/photos/5503232/pexels-photo-5503232.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Moray",
+          "image": "https://images.pexels.com/photos/5194497/pexels-photo-5194497.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Ollantaytambo",
+          "image": "https://images.pexels.com/photos/6780787/pexels-photo-6780787.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Andean Ceremony",
+          "image": "https://images.pexels.com/photos/36457599/pexels-photo-36457599.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    }
+  },
+  "South Asia": {
+    "India": {
+      "Andaman Islands": [
+        {
+          "day": "Day 1",
+          "title": "Port Blair & Cellular Jail",
+          "image": "https://images.pexels.com/photos/362690/pexels-photo-362690.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Havelock & Radhanagar Beach",
+          "image": "https://images.pexels.com/photos/3155643/pexels-photo-3155643.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Nemo Reef Diving",
+          "image": "https://images.pexels.com/photos/36389357/pexels-photo-36389357.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Neil Island",
+          "image": "https://images.pexels.com/photos/3747567/pexels-photo-3747567.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Ross Island",
+          "image": "https://images.pexels.com/photos/36505898/pexels-photo-36505898.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Goa": [
+        {
+          "day": "Day 1",
+          "title": "Old Goa & Fontainhas",
+          "image": "https://images.pexels.com/photos/36664613/pexels-photo-36664613.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "North Goa Beaches",
+          "image": "https://images.pexels.com/photos/35916755/pexels-photo-35916755.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "South Goa Beaches",
+          "image": "https://images.pexels.com/photos/35916755/pexels-photo-35916755.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Dudhsagar Falls",
+          "image": "https://images.pexels.com/photos/1299355/pexels-photo-1299355.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Assagao",
+          "image": "https://images.pexels.com/photos/14512449/pexels-photo-14512449.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Himachal Pradesh": [
+        {
+          "day": "Day 1",
+          "title": "Shimla Ridge",
+          "image": "https://images.pexels.com/photos/5414576/pexels-photo-5414576.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Manali & Solang",
+          "image": "https://images.pexels.com/photos/36721863/pexels-photo-36721863.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Bir Billing",
+          "image": "https://images.pexels.com/photos/6177371/pexels-photo-6177371.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Dharamshala",
+          "image": "https://images.pexels.com/photos/5555967/pexels-photo-5555967.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Spiti Valley",
+          "image": "https://images.pexels.com/photos/5239010/pexels-photo-5239010.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Kerala": [
+        {
+          "day": "Day 1",
+          "title": "Fort Kochi",
+          "image": "https://images.pexels.com/photos/35977920/pexels-photo-35977920.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Alleppey Backwaters",
+          "image": "https://images.pexels.com/photos/36718000/pexels-photo-36718000.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Periyar",
+          "image": "https://images.pexels.com/photos/36717711/pexels-photo-36717711.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Munnar",
+          "image": "https://images.pexels.com/photos/35994958/pexels-photo-35994958.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Varkala",
+          "image": "https://images.pexels.com/photos/6652178/pexels-photo-6652178.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Rajasthan": [
+        {
+          "day": "Day 1",
+          "title": "Jaipur",
+          "image": "https://images.pexels.com/photos/12931430/pexels-photo-12931430.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Amber Fort",
+          "image": "https://images.pexels.com/photos/36470562/pexels-photo-36470562.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Jodhpur",
+          "image": "https://images.pexels.com/photos/36470621/pexels-photo-36470621.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Udaipur",
+          "image": "https://images.pexels.com/photos/35394354/pexels-photo-35394354.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 5",
+          "title": "Ranakpur",
+          "image": "https://images.pexels.com/photos/29449927/pexels-photo-29449927.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 6",
+          "title": "Jaisalmer",
+          "image": "https://images.pexels.com/photos/4314300/pexels-photo-4314300.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Rishikesh": [
+        {
+          "day": "Day 1",
+          "title": "Ashrams",
+          "image": "https://images.pexels.com/photos/36123985/pexels-photo-36123985.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Ganges Rafting",
+          "image": "https://images.pexels.com/photos/7542627/pexels-photo-7542627.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Bungee",
+          "image": "https://images.pexels.com/photos/1486036/pexels-photo-1486036.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Ganga Aarti",
+          "image": "https://images.pexels.com/photos/36675455/pexels-photo-36675455.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ],
+      "Varanasi": [
+        {
+          "day": "Day 1",
+          "title": "Ganges Ghats",
+          "image": "https://images.pexels.com/photos/36565405/pexels-photo-36565405.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Temples & Aarti",
+          "image": "https://images.pexels.com/photos/36565405/pexels-photo-36565405.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Sarnath",
+          "image": "https://images.pexels.com/photos/5592369/pexels-photo-5592369.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Silk Weaving",
+          "image": "https://images.pexels.com/photos/5439052/pexels-photo-5439052.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "Maldives": {
+      "Male Atoll": [
+        {
+          "day": "Day 1",
+          "title": "Male City",
+          "image": "https://images.pexels.com/photos/1129343/pexels-photo-1129343.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Snorkeling",
+          "image": "https://images.pexels.com/photos/4973961/pexels-photo-4973961.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Diving",
+          "image": "https://images.pexels.com/photos/4809019/pexels-photo-4809019.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Sandbank",
+          "image": "https://images.pexels.com/photos/5890131/pexels-photo-5890131.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    },
+    "Sri Lanka": {
+      "Colombo": [
+        {
+          "day": "Day 1",
+          "title": "Fort & Galle Face",
+          "image": "https://images.pexels.com/photos/36703578/pexels-photo-36703578.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 2",
+          "title": "Pettah Market",
+          "image": "https://images.pexels.com/photos/31194788/pexels-photo-31194788.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 3",
+          "title": "Food Trail",
+          "image": "https://images.pexels.com/photos/5176006/pexels-photo-5176006.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        },
+        {
+          "day": "Day 4",
+          "title": "Mount Lavinia",
+          "image": "https://images.pexels.com/photos/36477911/pexels-photo-36477911.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+        }
+      ]
+    }
+  }
+}

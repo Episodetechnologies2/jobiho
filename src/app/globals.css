@@ -1,0 +1,358 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-lato);
+  --font-heading: var(--font-poppins);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+
+  /* Jobiho brand colors */
+  --color-brand-blue: #1565C0;
+  --color-brand-blue-dark: #0D47A1;
+  --color-brand-blue-light: #1976D2;
+  --color-brand-yellow: #FFC107;
+  --color-brand-yellow-dark: #FF8F00;
+  --color-brand-gray: #F8F9FA;
+  --color-brand-dark: #1F2937;
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: #1565C0;
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: #FFC107;
+  --accent-foreground: oklch(0.145 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-lato), 'Lato', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-poppins), 'Poppins', sans-serif;
+  }
+}
+
+/* Custom utility classes */
+@layer utilities {
+  .font-heading {
+    font-family: var(--font-poppins), 'Poppins', sans-serif;
+  }
+  .font-body {
+    font-family: var(--font-lato), 'Lato', sans-serif;
+  }
+  .text-brand-blue {
+    color: #1565C0;
+  }
+  .text-brand-yellow {
+    color: #FFC107;
+  }
+  .bg-brand-blue {
+    background-color: #1565C0;
+  }
+  .bg-brand-yellow {
+    background-color: #FFC107;
+  }
+  .bg-brand-gray {
+    background-color: #F8F9FA;
+  }
+  .border-brand-blue {
+    border-color: #1565C0;
+  }
+  .border-brand-yellow {
+    border-color: #FFC107;
+  }
+  .gradient-brand {
+    background: linear-gradient(135deg, #1565C0 0%, #0D47A1 100%);
+  }
+  .gradient-hero {
+    background: linear-gradient(to bottom right, rgba(13, 71, 161, 0.75), rgba(0, 0, 0, 0.45));
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes jobihoFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes jobihoDotBounce {
+  0%, 100% { transform: translateY(0); opacity: 0.65; }
+  50% { transform: translateY(-8px); opacity: 1; }
+}
+
+@keyframes pulseGlow {
+  0% { filter: drop-shadow(0 0 0px rgba(30, 144, 255, 0.0)); }
+  50% { filter: drop-shadow(0 0 18px rgba(30, 144, 255, 0.55)); }
+  100% { filter: drop-shadow(0 0 0px rgba(30, 144, 255, 0.0)); }
+}
+
+@keyframes jobihoRotate360 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes jobihoGlowPulse {
+  0%, 100% { opacity: 0.55; transform: scale(0.92); }
+  50% { opacity: 0.95; transform: scale(1.06); }
+}
+
+.jobiho-loading-fadein {
+  animation: jobihoFadeIn 450ms ease-out both;
+}
+
+.jobiho-logo-animation {
+  animation:
+    float 3s ease-in-out infinite,
+    pulseGlow 2.5s ease-in-out infinite;
+  will-change: transform, filter;
+}
+
+.jobiho-logo-rotate {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* Slower rotation for the loading screen */
+  animation: jobihoRotate360 4.5s linear infinite;
+  will-change: transform;
+}
+
+.jobiho-logo-rotate::before {
+  content: "";
+  position: absolute;
+  inset: -28px;
+  border-radius: 9999px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 193, 7, 0.38) 0%,
+    rgba(255, 193, 7, 0.18) 35%,
+    rgba(21, 101, 192, 0.14) 60%,
+    rgba(0, 0, 0, 0) 72%
+  );
+  filter: blur(18px);
+  animation: jobihoGlowPulse 2.2s ease-in-out infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.jobiho-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+  background: rgba(255, 193, 7, 0.95);
+  box-shadow: 0 10px 30px rgba(255, 193, 7, 0.25);
+  animation: jobihoDotBounce 1.05s ease-in-out infinite;
+}
+.jobiho-dot--2 { animation-delay: 0.15s; }
+.jobiho-dot--3 { animation-delay: 0.3s; }
+
+.jobiho-route-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: linear-gradient(180deg, #0f172a 0%, #020617 100%);
+  opacity: 1;
+  transition: opacity 0.35s ease;
+}
+.jobiho-route-loader::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 20%, rgba(13, 71, 161, 0.35), transparent 55%),
+    radial-gradient(circle at 70% 60%, rgba(255, 193, 7, 0.16), transparent 55%);
+  pointer-events: none;
+}
+.jobiho-route-loader.is-fading {
+  opacity: 0;
+}
+
+.jobiho-loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: linear-gradient(180deg, #0f172a 0%, #020617 100%);
+}
+.jobiho-loading-screen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 20%, rgba(13, 71, 161, 0.35), transparent 55%),
+    radial-gradient(circle at 70% 60%, rgba(255, 193, 7, 0.16), transparent 55%);
+  pointer-events: none;
+}
+.jobiho-loading-center {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 24px;
+}
+.jobiho-loading-footer {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Hide Next.js dev indicator portal */
+nextjs-portal {
+  display: none !important;
+}
+
+/* Parallax hero for inner pages */
+.parallax-hero {
+  height: 60vh;
+  min-height: 320px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Destination overview gallery hover-expand */
+.image-wrapper {
+  --border-size: 4px;
+  --border-color: #f8f9fa;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  transition: all 0.3s ease;
+}
+
+.image-card {
+  position: relative;
+  background-image: var(--bg-img);
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  overflow: hidden;
+  border: var(--border-size) solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.image-card:hover {
+  transform: scale(1.02);
+}
+
+.image-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.image-card:hover::after {
+  opacity: 1;
+}
