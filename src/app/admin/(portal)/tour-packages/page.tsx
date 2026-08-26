@@ -14,7 +14,9 @@ import {
   Globe, 
   FileEdit,
   Loader2,
-  AlertTriangle
+  AlertTriangle,
+  Check,
+  X
 } from 'lucide-react';
 import { toast } from 'sonner';
 import { BASE_PATH, asset } from '@/lib/basePath';
@@ -46,6 +48,32 @@ export default function TourPackagesPage() {
   const [tourToDelete, setTourToDelete] = useState<TourPackage | null>(null);
   const [deleteLoading, setDeleteLoading] = useState(false);
 
+  // Dynamic regions list & modal states
+  const [regionsList, setRegionsList] = useState<{ id: number; name: string }[]>([]);
+  const [manageRegionsOpen, setManageRegionsOpen] = useState(false);
+  const [newRegionName, setNewRegionName] = useState('');
+  const [addRegionLoading, setAddRegionLoading] = useState(false);
+  
+  // Region editing states
+  const [editingRegionId, setEditingRegionId] = useState<number | null>(null);
+  const [editingRegionName, setEditingRegionName] = useState('');
+  const [saveRegionLoading, setSaveRegionLoading] = useState(false);
+
+  // Region deleting state
+  const [deletingRegionId, setDeletingRegionId] = useState<number | null>(null);
+  const [deleteRegionLoading, setDeleteRegionLoading] = useState(false);
+
+  const fetchRegions = async () => {
+    try {
+      const res = await fetch(`${BASE_PATH}/api/regions`);
+      if (!res.ok) throw new Error('Failed to fetch regions');
+      const data = await res.json();
+      setRegionsList(data);
+    } catch (err: any) {
+      console.error('Failed to load regions:', err);
+    }
+  };
+
   // Fetch all tours
   const fetchTours = async () => {
     try {
@@ -63,7 +91,77 @@ export default function TourPackagesPage() {
 
   useEffect(() => {
     fetchTours();
+    fetchRegions();
   }, []);
+
+  const handleAddRegion = async () => {
+    if (!newRegionName.trim()) return;
+    setAddRegionLoading(true);
+    try {
+      const res = await fetch(`${BASE_PATH}/api/regions`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: newRegionName })
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || 'Failed to add region');
+      }
+      toast.success(`Region "${newRegionName}" added successfully!`);
+      setNewRegionName('');
+      fetchRegions();
+    } catch (err: any) {
+      toast.error(err.message || 'Something went wrong while adding region');
+    } finally {
+      setAddRegionLoading(false);
+    }
+  };
+
+  const handleRenameRegion = async (id: number) => {
+    if (!editingRegionName.trim()) return;
+    setSaveRegionLoading(true);
+    try {
+      const res = await fetch(`${BASE_PATH}/api/regions/${id}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: editingRegionName })
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || 'Failed to rename region');
+      }
+      toast.success(`Region renamed to "${editingRegionName}" successfully!`);
+      setEditingRegionId(null);
+      setEditingRegionName('');
+      fetchRegions();
+      fetchTours();
+    } catch (err: any) {
+      toast.error(err.message || 'Something went wrong while renaming region');
+    } finally {
+      setSaveRegionLoading(false);
+    }
+  };
+
+  const handleDeleteRegion = async (id: number) => {
+    setDeleteRegionLoading(true);
+    try {
+      const res = await fetch(`${BASE_PATH}/api/regions/${id}`, {
+        method: 'DELETE'
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        throw new Error(data.error || 'Failed to delete region');
+      }
+      toast.success('Region deleted successfully!');
+      setDeletingRegionId(null);
+      fetchRegions();
+      fetchTours();
+    } catch (err: any) {
+      toast.error(err.message || 'Something went wrong while deleting region');
+    } finally {
+      setDeleteRegionLoading(false);
+    }
+  };
 
   // Filter handlers
   const filteredTours = tours.filter((tour) => {
@@ -78,8 +176,11 @@ export default function TourPackagesPage() {
     return matchesSearch && matchesStatus && matchesRegion;
   });
 
-  // Unique regions for filter dropdown
-  const uniqueRegions = Array.from(new Set(tours.map((t) => t.region))).filter(Boolean);
+  // Unique regions for filter dropdown (includes loaded database regions + any ad-hoc package regions)
+  const uniqueRegions = Array.from(new Set([
+    ...regionsList.map((r) => r.name),
+    ...tours.map((t) => t.region).filter(Boolean)
+  ])).filter(Boolean).sort();
 
   // Toggle status (published <-> draft)
   const handleToggleStatus = async (tour: TourPackage) => {
@@ -137,13 +238,22 @@ export default function TourPackagesPage() {
           <h2 className="text-2xl font-bold font-heading text-gray-800">Tour & Packages</h2>
           <p className="text-sm text-gray-500 mt-1">Manage all tour and package content displayed on the website.</p>
         </div>
-        <Link 
-          href="/admin/tour-packages/add"
-          className="inline-flex items-center gap-2 bg-[#1565C0] hover:bg-[#0D47A1] text-white text-sm font-semibold px-4.5 py-3 rounded-xl shadow-sm transition-all whitespace-nowrap"
-        >
-          <Plus className="w-4 h-4" />
-          Add Tour & Package
-        </Link>
+        <div className="flex items-center gap-3">
+          <button 
+            onClick={() => setManageRegionsOpen(true)}
+            className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-gray-700 border border-gray-200 text-sm font-semibold px-4.5 py-3 rounded-xl shadow-sm transition-all whitespace-nowrap cursor-pointer"
+          >
+            <Globe className="w-4 h-4 text-gray-500" />
+            Manage Regions
+          </button>
+          <Link 
+            href="/admin/tour-packages/add"
+            className="inline-flex items-center gap-2 bg-[#1565C0] hover:bg-[#0D47A1] text-white text-sm font-semibold px-4.5 py-3 rounded-xl shadow-sm transition-all whitespace-nowrap"
+          >
+            <Plus className="w-4 h-4" />
+            Add Tour & Package
+          </Link>
+        </div>
       </div>
 
       {/* 2. SEARCH & FILTER CONTROLS */}
@@ -418,6 +528,180 @@ export default function TourPackagesPage() {
               >
                 {deleteLoading && <Loader2 className="w-4 h-4 animate-spin" />}
                 Delete
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 5. MANAGE REGIONS MODAL */}
+      {manageRegionsOpen && (
+        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl max-w-lg w-full p-6 shadow-xl border border-gray-100 relative animate-in fade-in zoom-in-95 duration-200 max-h-[90vh] flex flex-col">
+            {/* Header */}
+            <div className="flex items-center justify-between pb-4 border-b border-gray-100">
+              <div className="flex items-center gap-3 text-[#1565C0]">
+                <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center">
+                  <Globe className="w-5 h-5 text-[#1565C0]" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold font-heading text-gray-800">Manage Regions</h3>
+                  <p className="text-xs text-gray-400 font-medium">Add, rename or delete travel regions</p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  setManageRegionsOpen(false);
+                  setEditingRegionId(null);
+                  setDeletingRegionId(null);
+                }}
+                className="p-1.5 hover:bg-gray-100 text-gray-400 hover:text-gray-600 rounded-lg transition-colors cursor-pointer"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            {/* Quick Add Inline Form */}
+            <div className="py-4 border-b border-gray-100">
+              <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Add New Region</label>
+              <div className="flex gap-2">
+                <input
+                  type="text"
+                  placeholder="e.g. Oceania, Central America"
+                  value={newRegionName}
+                  onChange={(e) => setNewRegionName(e.target.value)}
+                  className="flex-1 px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm outline-none transition-all focus:bg-white focus:border-[#1565C0] text-gray-800 font-medium"
+                />
+                <button
+                  type="button"
+                  disabled={addRegionLoading || !newRegionName.trim()}
+                  onClick={handleAddRegion}
+                  className="px-4 py-2.5 rounded-xl bg-[#1565C0] hover:bg-[#0D47A1] disabled:bg-gray-300 text-white text-sm font-semibold flex items-center gap-1.5 shadow-sm transition-colors cursor-pointer whitespace-nowrap"
+                >
+                  {addRegionLoading && <Loader2 className="w-4 h-4 animate-spin" />}
+                  Add
+                </button>
+              </div>
+            </div>
+
+            {/* Regions List (Scrollable) */}
+            <div className="flex-1 overflow-y-auto py-4 space-y-2 max-h-[40vh] pr-1">
+              {regionsList.length === 0 ? (
+                <div className="text-center py-8 text-gray-400 font-medium text-sm">
+                  No regions configured yet.
+                </div>
+              ) : (
+                regionsList.map((r) => {
+                  const isEditing = editingRegionId === r.id;
+                  const isDeleting = deletingRegionId === r.id;
+
+                  return (
+                    <div
+                      key={r.id}
+                      className="flex items-center justify-between p-3 rounded-xl border border-gray-100 bg-gray-50/50 hover:bg-gray-50 transition-colors"
+                    >
+                      {isEditing ? (
+                        <div className="flex items-center gap-2 flex-1 mr-2">
+                          <input
+                            type="text"
+                            value={editingRegionName}
+                            onChange={(e) => setEditingRegionName(e.target.value)}
+                            className="flex-1 px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm outline-none focus:border-[#1565C0] font-medium"
+                          />
+                          <button
+                            type="button"
+                            disabled={saveRegionLoading || !editingRegionName.trim()}
+                            onClick={() => handleRenameRegion(r.id)}
+                            className="p-1.5 hover:bg-emerald-50 text-emerald-600 rounded-lg transition-colors cursor-pointer"
+                            title="Save"
+                          >
+                            {saveRegionLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Check className="w-4 h-4" />}
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setEditingRegionId(null);
+                              setEditingRegionName('');
+                            }}
+                            className="p-1.5 hover:bg-red-50 text-red-600 rounded-lg transition-colors cursor-pointer"
+                            title="Cancel"
+                          >
+                            <X className="w-4 h-4" />
+                          </button>
+                        </div>
+                      ) : isDeleting ? (
+                        <div className="flex items-center justify-between flex-1">
+                          <span className="text-xs text-red-600 font-semibold leading-tight pr-2">
+                            Delete "{r.name}"? Tours will be set to empty region.
+                          </span>
+                          <div className="flex items-center gap-1.5">
+                            <button
+                              type="button"
+                              disabled={deleteRegionLoading}
+                              onClick={() => handleDeleteRegion(r.id)}
+                              className="px-2.5 py-1.5 bg-red-600 hover:bg-red-700 disabled:bg-gray-300 text-white rounded-lg text-xs font-semibold cursor-pointer flex items-center gap-1"
+                            >
+                              {deleteRegionLoading && <Loader2 className="w-3.5 h-3.5 animate-spin" />}
+                              Confirm
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => setDeletingRegionId(null)}
+                              className="px-2.5 py-1.5 border border-gray-200 bg-white hover:bg-gray-50 text-gray-500 rounded-lg text-xs font-semibold cursor-pointer"
+                            >
+                              Cancel
+                            </button>
+                          </div>
+                        </div>
+                      ) : (
+                        <>
+                          <span className="text-sm font-bold text-gray-800">{r.name}</span>
+                          <div className="flex items-center gap-1">
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setEditingRegionId(r.id);
+                                setEditingRegionName(r.name);
+                                setDeletingRegionId(null);
+                              }}
+                              className="p-1.5 hover:bg-gray-100 text-gray-500 hover:text-amber-600 rounded-lg transition-colors cursor-pointer"
+                              title="Rename"
+                            >
+                              <Edit3 className="w-4 h-4" />
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setDeletingRegionId(r.id);
+                                setEditingRegionId(null);
+                              }}
+                              className="p-1.5 hover:bg-red-50 text-gray-500 hover:text-red-600 rounded-lg transition-colors cursor-pointer"
+                              title="Delete"
+                            >
+                              <Trash2 className="w-4 h-4" />
+                            </button>
+                          </div>
+                        </>
+                      )}
+                    </div>
+                  );
+                })
+              )}
+            </div>
+
+            {/* Footer */}
+            <div className="pt-4 border-t border-gray-100 flex justify-end">
+              <button
+                type="button"
+                onClick={() => {
+                  setManageRegionsOpen(false);
+                  setEditingRegionId(null);
+                  setDeletingRegionId(null);
+                }}
+                className="px-5 py-2.5 rounded-xl bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-semibold transition-colors cursor-pointer"
+              >
+                Close
               </button>
             </div>
           </div>

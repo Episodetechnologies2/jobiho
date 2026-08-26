@@ -166,6 +166,48 @@ export default function TourPackageForm({ initialData, onSubmit, loading, submit
     }
   }, [name, initialData]);
 
+  const [regions, setRegions] = useState<string[]>([]);
+  const [loadingRegions, setLoadingRegions] = useState(true);
+
+  useEffect(() => {
+    const fetchRegions = async () => {
+      try {
+        const res = await fetch(`${BASE_PATH}/api/regions`);
+        if (!res.ok) throw new Error('Failed to fetch regions');
+        const data = await res.json();
+        let names = data.map((r: any) => r.name);
+        
+        if (names.length === 0) {
+          names = [...REGION_OPTIONS];
+        }
+        
+        if (initialData?.region && !names.includes(initialData.region)) {
+          names.push(initialData.region);
+        }
+        
+        setRegions(names);
+        
+        if (!initialData && names.length > 0) {
+          if (names.includes('South Asia')) {
+            setRegion('South Asia');
+          } else {
+            setRegion(names[0]);
+          }
+        }
+      } catch (err: any) {
+        console.error(err);
+        const defaults = [...REGION_OPTIONS];
+        if (initialData?.region && !defaults.includes(initialData.region)) {
+          defaults.push(initialData.region);
+        }
+        setRegions(defaults);
+      } finally {
+        setLoadingRegions(false);
+      }
+    };
+    fetchRegions();
+  }, [initialData]);
+
   // Load initial data if editing
   useEffect(() => {
     if (initialData) {
@@ -375,7 +417,7 @@ export default function TourPackageForm({ initialData, onSubmit, loading, submit
 
         {activeTab === 'basic' && (
           <div className="p-6 space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div>
               {/* Name */}
               <div>
                 <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Tour Name *</label>
@@ -385,19 +427,6 @@ export default function TourPackageForm({ initialData, onSubmit, loading, submit
                   placeholder="e.g. Tokyo Adventures"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm outline-none transition-all focus:bg-white focus:border-[#1565C0]"
-                />
-              </div>
-
-              {/* Slug */}
-              <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Slug (URL identifier) *</label>
-                <input
-                  type="text"
-                  required
-                  placeholder="e.g. tokyo-adventures"
-                  value={slug}
-                  onChange={(e) => setSlug(e.target.value)}
                   className="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm outline-none transition-all focus:bg-white focus:border-[#1565C0]"
                 />
               </div>
@@ -425,7 +454,7 @@ export default function TourPackageForm({ initialData, onSubmit, loading, submit
                   onChange={(e) => setRegion(e.target.value)}
                   className="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm outline-none transition-all focus:bg-white focus:border-[#1565C0] font-semibold text-gray-700"
                 >
-                  {REGION_OPTIONS.map(r => (
+                  {regions.map(r => (
                     <option key={r} value={r}>{r}</option>
                   ))}
                 </select>

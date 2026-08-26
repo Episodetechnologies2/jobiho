@@ -26,7 +26,26 @@ export default function CMSLayout({ children }: { children: React.ReactNode }) {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [profile, setProfile] = useState<any>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Fetch admin profile for dynamic header info
+  useEffect(() => {
+    async function fetchProfile() {
+      try {
+        const res = await fetch(`${BASE_PATH}/api/admin/profile`);
+        if (res.ok) {
+          const data = await res.json();
+          if (data.success && data.profile) {
+            setProfile(data.profile);
+          }
+        }
+      } catch (err) {
+        console.error('Failed to load profile in layout:', err);
+      }
+    }
+    fetchProfile();
+  }, []);
 
   // Close mobile drawer on route change
   useEffect(() => {
@@ -228,12 +247,20 @@ export default function CMSLayout({ children }: { children: React.ReactNode }) {
               onClick={() => setDropdownOpen(!dropdownOpen)}
               className="flex items-center gap-2.5 p-1.5 rounded-xl hover:bg-gray-50 transition-colors text-left"
             >
-              <div className="w-9 h-9 rounded-full bg-[#1565C0]/10 text-[#1565C0] flex items-center justify-center font-bold text-sm shadow-inner">
-                A
+              <div className="w-9 h-9 rounded-full bg-[#1565C0]/10 text-[#1565C0] flex items-center justify-center font-bold text-sm shadow-inner overflow-hidden">
+                {profile?.profileImage ? (
+                  <img src={profile.profileImage} alt="Avatar" className="w-full h-full object-cover" />
+                ) : (
+                  profile?.name ? profile.name.charAt(0).toUpperCase() : 'A'
+                )}
               </div>
               <div className="hidden sm:block">
-                <p className="text-sm font-semibold text-gray-800 leading-tight">Admin</p>
-                <p className="text-[11px] text-gray-400 font-medium leading-none">Super Administrator</p>
+                <p className="text-sm font-semibold text-gray-800 leading-tight">
+                  {profile?.name || 'Admin'}
+                </p>
+                <p className="text-[11px] text-gray-400 font-medium leading-none">
+                  {profile?.role || 'Super Administrator'}
+                </p>
               </div>
               <ChevronDown className={`w-4 h-4 text-gray-400 transition-transform duration-200 ${dropdownOpen ? 'rotate-180' : ''}`} />
             </button>

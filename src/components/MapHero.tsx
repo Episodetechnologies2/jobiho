@@ -523,6 +523,14 @@ const getLabelOffset = (name: string) => {
     case "Christchurch": return { x: 8, y: 3, anchor: "start" };
     case "Taupō": return { x: 0, y: 11, anchor: "middle" };
 
+    // Japan
+    case "Tokyo": return { x: 0, y: -10, anchor: "middle" };
+    case "Kyoto": return { x: -8, y: 3, anchor: "end" };
+    case "Osaka": return { x: 8, y: 3, anchor: "start" };
+    case "Mount Fuji": return { x: 0, y: 11, anchor: "middle" };
+    case "4-Day Off-Season Hokkaido": return { x: 0, y: -10, anchor: "middle" };
+    case "Hokkaido": return { x: 0, y: -10, anchor: "middle" };
+
     default: return { x: 0, y: -8, anchor: "middle" };
   }
 };
@@ -592,9 +600,32 @@ export default function MapHero({ initialPackages = [] }: { initialPackages?: an
       );
       if (!countryKey) return;
 
+      let coords = pkg.coords;
+      if (countryKey === "Japan") {
+        const japanAnchors = [
+          { name: "Tokyo", coords: [139.69, 35.69] },
+          { name: "Kyoto", coords: [135.77, 35.01] },
+          { name: "Osaka", coords: [135.5, 34.69] },
+          { name: "Mount Fuji", coords: [138.73, 35.36] },
+          { name: "Hokkaido", coords: [141.3545, 43.0621] },
+        ];
+        let minD = Infinity;
+        let closestCoords = coords;
+        japanAnchors.forEach((anchor) => {
+          const dx = pkg.coords[0] - anchor.coords[0];
+          const dy = pkg.coords[1] - anchor.coords[1];
+          const d = dx * dx + dy * dy;
+          if (d < minD) {
+            minD = d;
+            closestCoords = anchor.coords as [number, number];
+          }
+        });
+        coords = closestCoords;
+      }
+
       cloned[regKey].countryData[countryKey].destinations.push({
         name: pkg.name,
-        coords: pkg.coords,
+        coords: coords,
         tag: pkg.tag,
         tagColor: pkg.tagColor,
         description: pkg.shortDescription,
@@ -938,6 +969,10 @@ export default function MapHero({ initialPackages = [] }: { initialPackages?: an
                         if (activeCountry === "Philippines") {
                           return dest.slug === "manila" || dest.slug === "cebu" || dest.slug === "boracay" || dest.slug === "palawan";
                         }
+                        // For Japan, only show the main city/destination pins on the map
+                        if (activeCountry === "Japan") {
+                          return dest.slug === "tokyo" || dest.slug === "kyoto" || dest.slug === "osaka" || dest.slug === "mount-fuji" || dest.slug === "4-day-off-season-hokkaido";
+                        }
                         return true;
                       })
                       .map((dest) => {
@@ -948,6 +983,7 @@ export default function MapHero({ initialPackages = [] }: { initialPackages?: an
                         const pingFill = isGreyed ? "#555" : "#FFC107";
                         const pingStroke = isGreyed ? "#444" : "#fff";
                         const labelColor = isGreyed ? "#777" : "#fff";
+                        const displayName = dest.name === "4-Day Off-Season Hokkaido" ? "Hokkaido" : dest.name;
                         return (
                           <Marker key={dest.name} coordinates={dest.coords}>
                             <g
@@ -965,10 +1001,10 @@ export default function MapHero({ initialPackages = [] }: { initialPackages?: an
                                 </circle>
                               )}
                               {(() => {
-                                const offset = getLabelOffset(dest.name);
+                                const offset = getLabelOffset(displayName);
                                 return (
                                   <text textAnchor={offset.anchor} x={offset.x} y={offset.y} style={{ fontFamily: "system-ui, sans-serif", fontSize: "4.5px", fill: labelColor, fontWeight: isGreyed ? 400 : 600, opacity: isGreyed ? 0.6 : 1, textShadow: "0 1px 3px rgba(0,0,0,0.9)" }}>
-                                    {dest.name}
+                                    {displayName}
                                   </text>
                                 );
                               })()}
@@ -1065,7 +1101,7 @@ export default function MapHero({ initialPackages = [] }: { initialPackages?: an
                   <h3 className="text-xs font-bold font-heading text-white/50 uppercase tracking-wider">{activeCountry} Destinations</h3>
                   {currentDestinations.map((dest, i) => {
                     const selectedDestCoords = selectedDest !== null ? currentDestinations[selectedDest]?.coords : null;
-                    const isSelected = (activeCountry === "Cambodia" || activeCountry === "Indonesia" || activeCountry === "Laos")
+                    const isSelected = (activeCountry === "Cambodia" || activeCountry === "Indonesia" || activeCountry === "Laos" || activeCountry === "Philippines" || activeCountry === "Japan")
                       ? (selectedDestCoords !== null && dest.coords[0] === selectedDestCoords[0] && dest.coords[1] === selectedDestCoords[1])
                       : (selectedDest === i);
                     const isGreyed = selectedDest !== null && !isSelected;

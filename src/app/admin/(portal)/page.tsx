@@ -1,12 +1,31 @@
 import pool from '@/lib/db';
 import { MapPin, Globe, FileEdit, Clock, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
+import { getSession } from '@/lib/auth';
 
 export const revalidate = 0; // Disable caching so stats are always up to date
 
 export default async function DashboardPage() {
   let stats = { total: 0, published: 0, draft: 0 };
   let recentTours: any[] = [];
+  let adminName = 'Admin';
+
+  try {
+    const session = await getSession();
+    if (session?.email) {
+      const [rows]: any = await pool.query(
+        'SELECT name FROM users WHERE username = ?',
+        [session.email]
+      );
+      if (rows && rows.length > 0 && rows[0].name) {
+        adminName = rows[0].name;
+      } else if (session.name) {
+        adminName = session.name;
+      }
+    }
+  } catch (err) {
+    console.error('Error fetching admin name for dashboard:', err);
+  }
 
   try {
     // Fetch counts in one optimized query
@@ -71,7 +90,7 @@ export default async function DashboardPage() {
       {/* Welcome Banner */}
       <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
-          <h2 className="text-xl font-bold font-heading text-gray-800">Welcome Back, Admin!</h2>
+          <h2 className="text-xl font-bold font-heading text-gray-800">Welcome Back, {adminName}!</h2>
           <p className="text-sm text-gray-500 mt-1">Here is a quick overview of your tours and packages status.</p>
         </div>
         <Link 
