@@ -481,7 +481,7 @@ const getLabelOffset = (name: string) => {
     case "Luang Prabang": return { x: 0, y: -10, anchor: "middle" };
     case "Vang Vieng": return { x: -8, y: 3, anchor: "end" };
     case "Xieng Khuang": return { x: 8, y: 3, anchor: "start" };
-    
+
     // Indonesia
     case "Bali": return { x: 0, y: 11, anchor: "middle" };
     case "Jogyakarta": return { x: -8, y: 3, anchor: "end" };
@@ -569,6 +569,7 @@ export default function MapHero({ initialPackages = [] }: { initialPackages?: an
     });
 
     initialPackages.forEach((pkg: any) => {
+      if (!pkg.region || !pkg.country) return;
       let regionName = pkg.region;
       let countryName = pkg.country;
 
@@ -592,13 +593,42 @@ export default function MapHero({ initialPackages = [] }: { initialPackages?: an
 
       const regKey = Object.keys(cloned).find(
         key => cloned[key].label.toLowerCase() === regionName.toLowerCase()
-      );
-      if (!regKey) return;
+      ) || regionName.toLowerCase().replace(/\s+/g, "-");
 
-      const countryKey = Object.keys(cloned[regKey].countryData).find(
-        name => name.toLowerCase() === countryName.toLowerCase()
-      );
-      if (!countryKey) return;
+      if (!cloned[regKey]) {
+        cloned[regKey] = {
+          label: regionName,
+          center: pkg.coords || [0, 0],
+          zoom: 2.5,
+          background: "/images/hero-experiences.jpg",
+          description: `Explore ${regionName}`,
+          highlightCountries: [],
+          countryData: {}
+        };
+      }
+
+      const countryKey = Object.keys(cloned[regKey].countryData).find(name => {
+        const nLower = name.toLowerCase();
+        const cLower = countryName.toLowerCase();
+        return nLower === cLower || 
+               (cLower === "usa" && nLower === "united states of america") ||
+               (cLower === "united states" && nLower === "united states of america") ||
+               (cLower === "united states of america" && nLower === "usa") ||
+               (cLower === "uae" && nLower === "united arab emirates") ||
+               (cLower === "united arab emirates" && nLower === "uae");
+      }) || countryName;
+
+      if (!cloned[regKey].countryData[countryKey]) {
+        if (!cloned[regKey].highlightCountries.includes(countryName)) {
+          cloned[regKey].highlightCountries.push(countryName);
+        }
+        cloned[regKey].countryData[countryKey] = {
+          center: pkg.coords || [0, 0],
+          zoom: 4.5,
+          background: pkg.thumbnailImage || "/images/hero-experiences.jpg",
+          destinations: []
+        };
+      }
 
       let coords = pkg.coords;
       if (countryKey === "Japan") {
