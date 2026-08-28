@@ -615,9 +615,9 @@ INSERT INTO `tour_packages` (
   `quick_fact_languages`, `quick_fact_time_zone`, `quick_fact_driving_side`
 ) VALUES (
   'sapa', 'Sapa', 'Vietnam', 'Southeast Asia', 
-  'Emerald rice terraces rising into the roof of Indochina', 'https://images.pexels.com/photos/6020286/pexels-photo-6020286.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 'Sapa town stands at the head of a deep valley of magnificent rice terraces that are still worked today as they have been for centuries. Enticing ribbons of road lead the eye down to the valley floor, white-water rivers rush among rice fields, and lush green mountains stretch into the distance as far as the eye can see. The highest peak in the region, Mount Fansipan also called ''Roof of Indochina'', crowns the rugged ridge line high above town, accessible by a scenic cable car. Sapa is also a rich cultural tapestry home to diverse ethnic minority groups like the Hmong, Red Dao, and Tay.', 
+  'Emerald rice terraces rising into the roof of Indochina', '/images/vietnam/sapa.png', 'Sapa town stands at the head of a deep valley of magnificent rice terraces that are still worked today as they have been for centuries. Enticing ribbons of road lead the eye down to the valley floor, white-water rivers rush among rice fields, and lush green mountains stretch into the distance as far as the eye can see. The highest peak in the region, Mount Fansipan also called ''Roof of Indochina'', crowns the rugged ridge line high above town, accessible by a scenic cable car. Sapa is also a rich cultural tapestry home to diverse ethnic minority groups like the Hmong, Red Dao, and Tay.', 
   103.84, 22.33, 'Nature', 'bg-teal-500', 
-  'Mist-covered peaks, emerald terraced rice fields, and ethnic tribal villages at Fansipan''s base.', 'https://images.pexels.com/photos/6020286/pexels-photo-6020286.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 
+  'Mist-covered peaks, emerald terraced rice fields, and ethnic tribal villages at Fansipan''s base.', '/images/vietnam/sapa.png', 
   'published', '', '3 Days', 
   'Hanoi (national capital)', 'Vietnamese Dong (₫)', 'Temperate/alpine — cool summers and occasionally cold, snowy winters', 'March–May (clear, green terraces) & September–November (harvest season)', 
   'Vietnamese, Ethnic Minority languages, basic English', 'ICT (UTC+7)', 'Right'
@@ -641,7 +641,7 @@ INSERT INTO `tour_package_itinerary` (
   `tour_package_id`, `day_number`, `title`, `location`, `description`, `highlights`, `image_url`, `sort_order`
 ) VALUES (
   @pkg_id, 1, 'Sapa Town & Cat Cat Village', 'Sapa Town & Cat Cat Village', 
-  'Arrive in Sapa and take in the cool mountain air. Walk down the valley to Cat Cat Village, a traditional Black Hmong settlement nestled next to a waterfall. Learn about Hmong weaving traditions, visit historical wooden homes, and watch cultural dance performances.', '["Explore Sapa town center and its stone church built by the French","Walk the scenic path down to Cat Cat Hmong Village","Photograph the waterfall and traditional waterwheels","Watch Hmong craft demonstrations including indigo fabric dyeing"]', 'https://images.pexels.com/photos/6020286/pexels-photo-6020286.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 0
+  'Arrive in Sapa and take in the cool mountain air. Walk down the valley to Cat Cat Village, a traditional Black Hmong settlement nestled next to a waterfall. Learn about Hmong weaving traditions, visit historical wooden homes, and watch cultural dance performances.', '["Explore Sapa town center and its stone church built by the French","Walk the scenic path down to Cat Cat Hmong Village","Photograph the waterfall and traditional waterwheels","Watch Hmong craft demonstrations including indigo fabric dyeing"]', '/images/vietnam/sapa.png', 0
 );
 INSERT INTO `tour_package_itinerary` (
   `tour_package_id`, `day_number`, `title`, `location`, `description`, `highlights`, `image_url`, `sort_order`
@@ -698,7 +698,7 @@ INSERT INTO `tour_package_travel_tips` (
 INSERT INTO `tour_package_images` (
   `tour_package_id`, `image_url`, `sort_order`
 ) VALUES (
-  @pkg_id, 'https://images.pexels.com/photos/6020286/pexels-photo-6020286.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 0
+  @pkg_id, '/images/vietnam/sapa.png', 0
 );
 INSERT INTO `tour_package_images` (
   `tour_package_id`, `image_url`, `sort_order`
@@ -1062,7 +1062,7 @@ INSERT INTO `tour_package_itinerary` (
   `tour_package_id`, `day_number`, `title`, `location`, `description`, `highlights`, `image_url`, `sort_order`
 ) VALUES (
   @pkg_id, 3, 'Lang Biang Peak & Valley of Love', 'Lang Biang Mountain & Valley of Love', 
-  'Board a Russian jeep to ascend to the top of Lang Biang Peak, the highest mountain in Da Lat, for panoramic views of the golden stream and valleys. Spend the afternoon exploring the scenic lawns, lakes, and flower gardens of the Valley of Love.', '["Ride a jeep to the summit of Lang Biang Peak","Enjoy panoramic views of Da Lat''s rivers and pine forests","Stroll through the gardens of the Valley of Love","Browse local embroidered art at XQ Historical Village"]', 'https://images.pexels.com/photos/6020286/pexels-photo-6020286.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 2
+  'Board a Russian jeep to ascend to the top of Lang Biang Peak, the highest mountain in Da Lat, for panoramic views of the golden stream and valleys. Spend the afternoon exploring the scenic lawns, lakes, and flower gardens of the Valley of Love.', '["Ride a jeep to the summit of Lang Biang Peak","Enjoy panoramic views of Da Lat''s rivers and pine forests","Stroll through the gardens of the Valley of Love","Browse local embroidered art at XQ Historical Village"]', 'https://images.pexels.com/photos/236519/pexels-photo-236519.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 2
 );
 INSERT INTO `tour_package_things_to_do` (
   `tour_package_id`, `title`, `description`, `icon_name`, `sort_order`
@@ -1117,7 +1117,7 @@ INSERT INTO `tour_package_images` (
 INSERT INTO `tour_package_images` (
   `tour_package_id`, `image_url`, `sort_order`
 ) VALUES (
-  @pkg_id, 'https://images.pexels.com/photos/6020286/pexels-photo-6020286.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 2
+  @pkg_id, 'https://images.pexels.com/photos/2088205/pexels-photo-2088205.jpeg?auto=compress&cs=tinysrgb&h=650&w=940', 2
 );
 
 -- Package: Hoi An

@@ -610,12 +610,12 @@ export default function MapHero({ initialPackages = [] }: { initialPackages?: an
       const countryKey = Object.keys(cloned[regKey].countryData).find(name => {
         const nLower = name.toLowerCase();
         const cLower = countryName.toLowerCase();
-        return nLower === cLower || 
-               (cLower === "usa" && nLower === "united states of america") ||
-               (cLower === "united states" && nLower === "united states of america") ||
-               (cLower === "united states of america" && nLower === "usa") ||
-               (cLower === "uae" && nLower === "united arab emirates") ||
-               (cLower === "united arab emirates" && nLower === "uae");
+        return nLower === cLower ||
+          (cLower === "usa" && nLower === "united states of america") ||
+          (cLower === "united states" && nLower === "united states of america") ||
+          (cLower === "united states of america" && nLower === "usa") ||
+          (cLower === "uae" && nLower === "united arab emirates") ||
+          (cLower === "united arab emirates" && nLower === "uae");
       }) || countryName;
 
       if (!cloned[regKey].countryData[countryKey]) {
