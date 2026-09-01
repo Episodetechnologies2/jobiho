@@ -438,7 +438,7 @@ export default function AboutExperience() {
       </section>
 
       {/* ═══════ 6. Leadership Team (from about.html) ═══════ */}
-      <section className="py-20 lg:py-28 bg-white">
+      {/* <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div {...fadeUp(0)} className="text-center mb-16">
             <div className="flex items-center justify-center gap-2 mb-4">
@@ -477,7 +477,7 @@ export default function AboutExperience() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ═══════ 7. Testimonials (KEEP) ═══════ */}
       <section className="py-20 lg:py-28 bg-white overflow-hidden">
