@@ -89,13 +89,31 @@ const baseRegionsData: Record<string, RegionData> = {
       },
     },
   },
+  "north-asia": {
+    label: "North Asia",
+    center: [95, 60],
+    zoom: 2.3,
+    background: "/images/city-5.jpg",
+    description: "Vast landscapes, historic capitals, and untouched wilderness across North Asia.",
+    highlightCountries: ["Russia"],
+    countryData: {
+      Russia: {
+        center: [90, 60], zoom: 2.5, background: "/images/city-5.jpg",
+        destinations: [
+          { name: "Moscow", coords: [37.62, 55.75], tag: "Historical", tagColor: "bg-amber-600", description: "Red Square, the Kremlin, Bolshoi Theatre, and centuries of imperial grandeur.", image: "/images/city-5.jpg" },
+          { name: "St. Petersburg", coords: [30.32, 59.93], tag: "Heritage", tagColor: "bg-purple-500", description: "Hermitage Museum, Winter Palace, white nights, and baroque waterfront architecture.", image: "/images/city-6.jpg" },
+          { name: "Lake Baikal", coords: [108.0, 53.5], tag: "Nature", tagColor: "bg-teal-500", description: "The deepest lake on Earth — crystal-clear Siberian waters and untouched wilderness.", image: "/images/dest-11.jpg" },
+        ],
+      },
+    },
+  },
   "east-asia": {
     label: "East Asia",
     center: [115, 33],
     zoom: 3,
     background: "/images/city-2.jpg",
     description: "Ancient traditions meet futuristic cities — discover the wonders of East Asia.",
-    highlightCountries: ["Japan", "South Korea", "China", "Taiwan", "Mongolia"],
+    highlightCountries: ["Japan", "South Korea", "North Korea", "China", "Taiwan", "Mongolia"],
     countryData: {
       China: {
         center: [104, 35], zoom: 3.5, background: "/images/offer-2.jpg",
@@ -140,7 +158,7 @@ const baseRegionsData: Record<string, RegionData> = {
     zoom: 3.5,
     background: "/images/dest-7.jpg",
     description: "Affordable adventures, rich cultures, and island paradise across Southeast Asia.",
-    highlightCountries: ["Thailand", "Indonesia", "Vietnam", "Malaysia", "Cambodia", "Myanmar", "Philippines", "Laos"],
+    highlightCountries: ["Thailand", "Indonesia", "Vietnam", "Malaysia", "Cambodia", "Myanmar", "Philippines", "Laos", "Brunei", "Timor-Leste"],
     countryData: {
       Thailand: {
         center: [99.5, 14.2], zoom: 6.2, background: "/images/dest-7.jpg",
@@ -211,7 +229,11 @@ const baseRegionsData: Record<string, RegionData> = {
     zoom: 2.5,
     background: "/images/about-1.jpg",
     description: "From iconic skylines to ancient Mayan pyramids — explore North America's diverse landscapes.",
-    highlightCountries: ["United States of America", "Mexico", "Canada", "Cuba", "Costa Rica"],
+    highlightCountries: [
+      "United States of America", "Mexico", "Canada", "Cuba", "Costa Rica",
+      "Guatemala", "Honduras", "El Salvador", "Nicaragua", "Panama", "Belize",
+      "Bahamas", "Jamaica", "Haiti", "Dominican Rep.", "Puerto Rico", "Trinidad and Tobago", "Greenland"
+    ],
     countryData: {
       "United States of America": {
         center: [-98, 39], zoom: 3.5, background: "/images/about-1.jpg",
@@ -247,7 +269,7 @@ const baseRegionsData: Record<string, RegionData> = {
     zoom: 2.3,
     background: "/images/about-8.jpg",
     description: "Ancient ruins, Amazon wilderness, and vibrant cultures across South America.",
-    highlightCountries: ["Peru", "Brazil", "Colombia", "Argentina", "Chile"],
+    highlightCountries: ["Peru", "Brazil", "Colombia", "Argentina", "Chile", "Bolivia", "Ecuador", "Venezuela", "Guyana", "Suriname", "Paraguay", "Uruguay", "Falkland Is."],
     countryData: {
       Peru: {
         center: [-75, -10], zoom: 4.5, background: "/images/about-8.jpg",
@@ -280,7 +302,7 @@ const baseRegionsData: Record<string, RegionData> = {
     zoom: 3.5,
     background: "/images/city-3.jpg",
     description: "Luxury shopping, desert safaris, ancient wonders, and iconic skylines.",
-    highlightCountries: ["United Arab Emirates", "Oman", "Qatar", "Saudi Arabia", "Jordan", "Turkey"],
+    highlightCountries: ["United Arab Emirates", "Oman", "Qatar", "Saudi Arabia", "Jordan", "Turkey", "Kuwait", "Bahrain", "Lebanon", "Syria", "Iraq", "Yemen", "Iran", "Israel", "Palestine"],
     countryData: {
       "United Arab Emirates": {
         center: [54, 24], zoom: 7, background: "/images/city-3.jpg",
@@ -317,16 +339,13 @@ const baseRegionsData: Record<string, RegionData> = {
     zoom: 3,
     background: "/images/tour-5.jpg",
     description: "Historic cities, stunning coastlines, and world-class cuisine across Europe.",
-    highlightCountries: ["France", "Italy", "Spain", "Greece", "Switzerland", "United Kingdom", "Germany", "Portugal", "Netherlands", "Austria", "Croatia", "Russia"],
+    highlightCountries: [
+      "France", "Italy", "Spain", "Greece", "Switzerland", "United Kingdom", "Germany", "Portugal", "Netherlands", "Austria", "Croatia",
+      "Norway", "Sweden", "Finland", "Denmark", "Iceland", "Ireland", "Belgium", "Luxembourg", "Poland", "Czechia", "Slovakia", "Hungary",
+      "Romania", "Bulgaria", "Albania", "Serbia", "Bosnia and Herz.", "Montenegro", "Kosovo", "Macedonia", "Lithuania", "Latvia", "Estonia",
+      "Belarus", "Ukraine", "Moldova", "Cyprus", "N. Cyprus"
+    ],
     countryData: {
-      Russia: {
-        center: [50, 58], zoom: 2.5, background: "/images/city-5.jpg",
-        destinations: [
-          { name: "Moscow", coords: [37.62, 55.75], tag: "Historical", tagColor: "bg-amber-600", description: "Red Square, the Kremlin, Bolshoi Theatre, and centuries of imperial grandeur.", image: "/images/city-5.jpg" },
-          { name: "St. Petersburg", coords: [30.32, 59.93], tag: "Heritage", tagColor: "bg-purple-500", description: "Hermitage Museum, Winter Palace, white nights, and baroque waterfront architecture.", image: "/images/city-6.jpg" },
-          { name: "Lake Baikal", coords: [108.0, 53.5], tag: "Nature", tagColor: "bg-teal-500", description: "The deepest lake on Earth — crystal-clear Siberian waters and untouched wilderness.", image: "/images/dest-11.jpg" },
-        ],
-      },
       France: {
         center: [2.5, 47], zoom: 6, background: "/images/tour-5.jpg",
         destinations: [
@@ -367,7 +386,15 @@ const baseRegionsData: Record<string, RegionData> = {
     zoom: 2.3,
     background: "/images/tour-1.jpg",
     description: "Wildlife safaris, ancient wonders, and untamed landscapes across Africa.",
-    highlightCountries: ["Kenya", "Tanzania", "South Africa", "Morocco", "Egypt", "Namibia", "Botswana", "Uganda", "Rwanda", "Zimbabwe"],
+    highlightCountries: [
+      "Kenya", "Tanzania", "South Africa", "Morocco", "Egypt", "Namibia", "Botswana", "Uganda", "Rwanda", "Zimbabwe",
+      "Algeria", "Angola", "Benin", "Burkina Faso", "Burundi", "Cameroon", "Central African Rep.", "Central African Republic",
+      "Chad", "Congo", "Côte d'Ivoire", "Ivory Coast", "Dem. Rep. Congo", "Democratic Republic of the Congo", "Djibouti",
+      "Eq. Guinea", "Equatorial Guinea", "Eritrea", "eSwatini", "Eswatini", "Swaziland", "Ethiopia", "Gabon", "Gambia",
+      "Ghana", "Guinea", "Guinea-Bissau", "Lesotho", "Liberia", "Libya", "Madagascar", "Malawi", "Mali", "Mauritania",
+      "Mozambique", "Niger", "Nigeria", "S. Sudan", "South Sudan", "Senegal", "Sierra Leone", "Somalia", "Somaliland",
+      "Sudan", "Togo", "Tunisia", "W. Sahara", "Western Sahara", "Zambia"
+    ],
     countryData: {
       Egypt: {
         center: [31, 27], zoom: 5.5, background: "/images/tour-13.jpg",
@@ -411,7 +438,7 @@ const baseRegionsData: Record<string, RegionData> = {
     zoom: 2.2,
     background: "/assets/images/aus/Great Barrier Reef, Queensland.png",
     description: "Discover Australia and New Zealand's vibrant culture, unique wildlife, and unforgettable adventures.",
-    highlightCountries: ["Australia", "New Zealand"],
+    highlightCountries: ["Australia", "New Zealand", "Papua New Guinea", "Fiji", "Solomon Is.", "Vanuatu", "New Caledonia"],
     countryData: {
       Australia: {
         center: [133, -25],
@@ -474,7 +501,7 @@ function useWindowWidth() {
   }, []);
   return width;
 }
-const getLabelOffset = (name: string) => {
+const getLabelOffset = (name: string): { x: number; y: number; anchor: "start" | "middle" | "end" } => {
   switch (name) {
     // Laos
     case "Vientiane": return { x: 0, y: 11, anchor: "middle" };
@@ -535,7 +562,7 @@ const getLabelOffset = (name: string) => {
   }
 };
 
-const getCountryLabelOffset = (name: string) => {
+const getCountryLabelOffset = (name: string): { x: number; y: number; anchor: "start" | "middle" | "end" } => {
   switch (name) {
     case "Laos": return { x: -8, y: -10, anchor: "end" };
     case "Vietnam": return { x: 8, y: 4, anchor: "start" };
@@ -563,7 +590,7 @@ export default function MapHero({ initialPackages = [] }: { initialPackages?: an
       Object.entries(regVal.countryData).forEach(([countryKey, countryVal]) => {
         cloned[regKey].countryData[countryKey] = {
           ...countryVal,
-          destinations: []
+          destinations: [...countryVal.destinations]
         };
       });
     });
@@ -579,6 +606,9 @@ export default function MapHero({ initialPackages = [] }: { initialPackages?: an
       }
       if (countryName.toLowerCase() === "united arab emirates") {
         countryName = "UAE";
+      }
+      if (countryName.toLowerCase() === "russia") {
+        regionName = "North Asia";
       }
 
       // Normalize Americas region
@@ -631,7 +661,7 @@ export default function MapHero({ initialPackages = [] }: { initialPackages?: an
       }
 
       let coords = pkg.coords;
-      if (countryKey === "Japan") {
+      if (countryKey === "Japan" && coords) {
         const japanAnchors = [
           { name: "Tokyo", coords: [139.69, 35.69] },
           { name: "Kyoto", coords: [135.77, 35.01] },
@@ -653,15 +683,23 @@ export default function MapHero({ initialPackages = [] }: { initialPackages?: an
         coords = closestCoords;
       }
 
-      cloned[regKey].countryData[countryKey].destinations.push({
+      const dests = cloned[regKey].countryData[countryKey].destinations;
+      const existingIdx = dests.findIndex(d => d.name.toLowerCase() === pkg.name.toLowerCase());
+      const newDest: Destination = {
         name: pkg.name,
-        coords: coords,
-        tag: pkg.tag,
-        tagColor: pkg.tagColor,
-        description: pkg.shortDescription,
-        image: pkg.thumbnailImage,
+        coords: coords || [0, 0],
+        tag: pkg.tag || "Tour",
+        tagColor: pkg.tagColor || "bg-blue-500",
+        description: pkg.shortDescription || pkg.tagline || "",
+        image: pkg.thumbnailImage || pkg.heroImage || "/images/city-5.jpg",
         slug: pkg.slug
-      });
+      };
+
+      if (existingIdx >= 0) {
+        dests[existingIdx] = { ...dests[existingIdx], ...newDest };
+      } else {
+        dests.push(newDest);
+      }
     });
 
     return cloned;

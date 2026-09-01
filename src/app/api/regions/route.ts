@@ -6,6 +6,7 @@ const DEFAULT_REGION_OPTIONS = [
   'South Asia',
   'East Asia',
   'Southeast Asia',
+  'North Asia',
   'North America',
   'South America',
   'Middle East',

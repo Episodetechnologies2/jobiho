@@ -57,39 +57,54 @@ function resolveCountryKey(regionKey: string, country: string): string | null {
   return resolveKeyByName(region, alias ?? country);
 }
 
-function resolveDestinationKey(regionKey: string, countryKey: string, destination: string): string | null {
-  const country = photoPack[regionKey]?.[countryKey];
-  if (!country) return null;
-  const alias = destinationAliases[normalize(destination)];
-  return resolveKeyByName(country, alias ?? destination);
+function findCountryRecord(region: string, country: string): { countryRecord: Record<string, PhotoDay[]>; countryNameKey: string } | null {
+  const regionKey = resolveKeyByName(photoPack, region);
+  if (regionKey) {
+    const countryKey = resolveCountryKey(regionKey, country);
+    if (countryKey && photoPack[regionKey][countryKey]) {
+      return { countryRecord: photoPack[regionKey][countryKey], countryNameKey: countryKey };
+    }
+  }
+
+  const alias = countryAliases[normalize(country)];
+  const targetCountry = normalize(alias ?? country);
+  for (const rKey of Object.keys(photoPack)) {
+    for (const cKey of Object.keys(photoPack[rKey])) {
+      if (normalize(cKey) === targetCountry) {
+        return { countryRecord: photoPack[rKey][cKey], countryNameKey: cKey };
+      }
+    }
+  }
+
+  return null;
 }
 
 export function getDestinationPhotos(region: string, country: string, destination: string): PhotoDay[] {
-  const regionKey = resolveKeyByName(photoPack, region);
-  if (!regionKey) return [];
+  const resolved = findCountryRecord(region, country);
+  if (!resolved) return [];
 
-  const countryKey = resolveCountryKey(regionKey, country);
-  if (!countryKey) return [];
-
-  const destinationKey = resolveDestinationKey(regionKey, countryKey, destination);
+  const alias = destinationAliases[normalize(destination)];
+  const destinationKey = resolveKeyByName(resolved.countryRecord, alias ?? destination);
   if (!destinationKey) return [];
 
-  return photoPack[regionKey][countryKey][destinationKey] ?? [];
+  return resolved.countryRecord[destinationKey] ?? [];
 }
 
 export function getCountryPhotos(region: string, country: string): PhotoDay[] {
-  const regionKey = resolveKeyByName(photoPack, region);
-  if (!regionKey) return [];
+  const resolved = findCountryRecord(region, country);
+  if (!resolved) return [];
 
-  const countryKey = resolveCountryKey(regionKey, country);
-  if (!countryKey) return [];
-
-  return Object.values(photoPack[regionKey][countryKey]).flat();
+  return Object.values(resolved.countryRecord).flat();
 }
 
 export function getRegionPhotos(region: string): PhotoDay[] {
   const regionKey = resolveKeyByName(photoPack, region);
-  if (!regionKey) return [];
+  if (regionKey) {
+    return Object.values(photoPack[regionKey]).flatMap((destinations) => Object.values(destinations).flat());
+  }
 
-  return Object.values(photoPack[regionKey]).flatMap((destinations) => Object.values(destinations).flat());
+  const russiaPhotos = getCountryPhotos(region, "Russia");
+  if (russiaPhotos.length > 0) return russiaPhotos;
+
+  return [];
 }

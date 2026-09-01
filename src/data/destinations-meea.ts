@@ -1929,7 +1929,7 @@ export const meeaDestinations: Record<string, DestinationPageData> = {
     slug: "moscow",
     name: "Moscow",
     country: "Russia",
-    region: "Europe",
+    region: "North Asia",
     tagline: "Red Square, the Kremlin, Bolshoi Theatre, and centuries of imperial grandeur",
     heroImage: "/images/city-5.jpg",
     overview:
@@ -2075,7 +2075,7 @@ export const meeaDestinations: Record<string, DestinationPageData> = {
     slug: "st-petersburg",
     name: "St. Petersburg",
     country: "Russia",
-    region: "Europe",
+    region: "North Asia",
     tagline: "Hermitage Museum, Winter Palace, White Nights, and baroque waterfront splendour",
     heroImage: "/images/city-6.jpg",
     overview:
@@ -2221,7 +2221,7 @@ export const meeaDestinations: Record<string, DestinationPageData> = {
     slug: "lake-baikal",
     name: "Lake Baikal",
     country: "Russia",
-    region: "Europe",
+    region: "North Asia",
     tagline: "The deepest lake on Earth — crystal-clear Siberian waters and untouched wilderness",
     heroImage: "/images/dest-11.jpg",
     overview:

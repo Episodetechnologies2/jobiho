@@ -32,6 +32,14 @@ export type DestinationPageData = {
   name: string;
   country: string;
   region: string;
+  coords?: [number, number];
+  tag?: string;
+  tagColor?: string;
+  shortDescription?: string;
+  thumbnailImage?: string;
+  status?: string;
+  price?: string;
+  duration?: string;
   tagline: string;
   heroImage: string;
   overview: string;
