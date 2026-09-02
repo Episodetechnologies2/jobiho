@@ -25,6 +25,7 @@ interface Destination {
   description: string;
   image: string;
   slug?: string;
+  duration?: string;
 }
 
 interface CountryData {
@@ -582,6 +583,8 @@ export default function MapHero({ initialPackages = [] }: { initialPackages?: an
 
   const regionsData = useMemo(() => {
     const cloned: Record<string, RegionData> = {};
+    const hasDbPackages = initialPackages && initialPackages.length > 0;
+
     Object.entries(baseRegionsData).forEach(([regKey, regVal]) => {
       cloned[regKey] = {
         ...regVal,
@@ -590,7 +593,7 @@ export default function MapHero({ initialPackages = [] }: { initialPackages?: an
       Object.entries(regVal.countryData).forEach(([countryKey, countryVal]) => {
         cloned[regKey].countryData[countryKey] = {
           ...countryVal,
-          destinations: [...countryVal.destinations]
+          destinations: hasDbPackages ? [] : [...countryVal.destinations]
         };
       });
     });
@@ -692,7 +695,8 @@ export default function MapHero({ initialPackages = [] }: { initialPackages?: an
         tagColor: pkg.tagColor || "bg-blue-500",
         description: pkg.shortDescription || pkg.tagline || "",
         image: pkg.thumbnailImage || pkg.heroImage || "/images/city-5.jpg",
-        slug: pkg.slug
+        slug: pkg.slug,
+        duration: pkg.duration || "N/A"
       };
 
       if (existingIdx >= 0) {
@@ -751,24 +755,22 @@ export default function MapHero({ initialPackages = [] }: { initialPackages?: an
 
   const packageCards = useMemo(() => {
     const cards: { dest: Destination; country: string; region: string; regionKey: string; duration: string }[] = [];
-    const durations = ["3 Days", "5 Days", "7 Days", "4 Days", "6 Days", "10 Days", "8 Days"];
-    let di = 0;
     if (activeCountry && activeRegion) {
       const cd = regionsData[activeRegion]?.countryData[activeCountry];
-      if (cd) cd.destinations.forEach((d) => cards.push({ dest: d, country: activeCountry, region: regionsData[activeRegion].label, regionKey: activeRegion, duration: durations[di++ % durations.length] }));
+      if (cd) cd.destinations.forEach((d) => cards.push({ dest: d, country: activeCountry, region: regionsData[activeRegion].label, regionKey: activeRegion, duration: d.duration || "N/A" }));
     } else if (activeRegion) {
       Object.entries(regionsData[activeRegion].countryData).forEach(([cn, cd]) => {
-        cd.destinations.forEach((d) => cards.push({ dest: d, country: cn, region: regionsData[activeRegion].label, regionKey: activeRegion, duration: durations[di++ % durations.length] }));
+        cd.destinations.forEach((d) => cards.push({ dest: d, country: cn, region: regionsData[activeRegion].label, regionKey: activeRegion, duration: d.duration || "N/A" }));
       });
     } else {
       Object.entries(regionsData).forEach(([rk, reg]) => {
         Object.entries(reg.countryData).forEach(([cn, cd]) => {
-          cd.destinations.forEach((d) => cards.push({ dest: d, country: cn, region: reg.label, regionKey: rk, duration: durations[di++ % durations.length] }));
+          cd.destinations.forEach((d) => cards.push({ dest: d, country: cn, region: reg.label, regionKey: rk, duration: d.duration || "N/A" }));
         });
       });
     }
     return cards;
-  }, [activeRegion, activeCountry]);
+  }, [activeRegion, activeCountry, regionsData]);
 
   const allTags = useMemo(() => {
     const tags = new Set<string>();

@@ -26,6 +26,9 @@ interface ScrollItineraryProps {
 }
 
 function DayCard({ item, isActive, isPast, fromLeft }: { item: ItineraryDay; isActive: boolean; isPast: boolean; fromLeft: boolean }) {
+  const fallbackImg = "/images/hero-destinations.jpg";
+  const [imgSrc, setImgSrc] = useState<string>(item.image ? asset(item.image) : asset(fallbackImg));
+
   return (
     <motion.div
       initial={{ opacity: 0, x: fromLeft ? -30 : 30 }}
@@ -40,8 +43,13 @@ function DayCard({ item, isActive, isPast, fromLeft }: { item: ItineraryDay; isA
           : "border-gray-100 opacity-50"
       }`}
     >
-      <div className="relative h-[200px] w-full overflow-hidden rounded-t-2xl">
-        <img src={asset(item.image)} alt={item.title} className="h-full w-full object-cover" />
+      <div className="relative h-[200px] w-full overflow-hidden rounded-t-2xl bg-gray-100">
+        <img
+          src={imgSrc}
+          alt={item.title}
+          onError={() => setImgSrc(asset(fallbackImg))}
+          className="h-full w-full object-cover"
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
         <span className="absolute top-3 left-3 inline-flex items-center gap-1 rounded-full bg-[#FFC107] px-3 py-1 text-xs font-bold text-gray-900 shadow">
           Day {item.day}
