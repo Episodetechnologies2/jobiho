@@ -91,6 +91,7 @@ export default function RouteLoader() {
             width={120}
             height={120}
             priority
+            style={{ width: 'auto', height: 'auto' }}
             className="object-contain drop-shadow-[0_18px_35px_rgba(0,0,0,0.35)]"
           />
         </div>

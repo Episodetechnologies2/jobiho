@@ -96,9 +96,12 @@ function toQueryValue(value: string): string {
   return encodeURIComponent(value.trim().toLowerCase());
 }
 
+import EnquireModal from "@/components/EnquireModal";
+
 export default function DestinationContent({ data }: { data: DestinationPageData }) {
   const { quickFacts } = data;
   const [hoveredGalleryIndex, setHoveredGalleryIndex] = useState<number | null>(null);
+  const [isEnquireModalOpen, setIsEnquireModalOpen] = useState(false);
   const galleryRows = (() => {
     // Vertical expand: keep a single column, expand one row based on hover.
     if (hoveredGalleryIndex === null) return "1fr 1fr 1fr 1fr";
@@ -346,7 +349,10 @@ export default function DestinationContent({ data }: { data: DestinationPageData
                     </div>
                   </div>
                 </div>
-                <button className="w-full bg-[#FFC107] text-[#1F2937] font-bold font-heading py-3.5 rounded-xl hover:bg-[#FF8F00] transition-colors flex items-center justify-center gap-2 text-sm shadow-lg">
+                <button 
+                  onClick={() => setIsEnquireModalOpen(true)}
+                  className="w-full bg-[#FFC107] text-[#1F2937] font-bold font-heading py-3.5 rounded-xl hover:bg-[#FF8F00] transition-colors flex items-center justify-center gap-2 text-sm shadow-lg active:scale-[0.98]"
+                >
                   Enquire Now <ArrowRight className="w-4 h-4" />
                 </button>
                 <Link href="/tours-packages" className="block text-center mt-3 text-white/50 text-xs hover:text-white/80 transition-colors">
@@ -357,6 +363,22 @@ export default function DestinationContent({ data }: { data: DestinationPageData
           </div>
         </div>
       </section>
+
+      {/* Enquire Modal Dialog */}
+      <EnquireModal
+        isOpen={isEnquireModalOpen}
+        onClose={() => setIsEnquireModalOpen(false)}
+        packageDetails={{
+          id: data.id,
+          name: data.name,
+          slug: data.slug,
+          country: data.country,
+          region: data.region,
+          duration: `${data.itinerary.length - 1} Nights / ${data.itinerary.length} Days`,
+          price: data.price,
+          heroImage: data.heroImage
+        }}
+      />
     </>
   );
 }
